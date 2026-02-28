@@ -3504,7 +3504,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody3D"]
-floor_max_angle = 3.1415927
+floor_max_angle = 1.74882
 floor_snap_length = 1.5
 script = SubResource("GDScript_3vyb7")
 SENSE = 0.1
