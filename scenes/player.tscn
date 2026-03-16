@@ -3993,7 +3993,8 @@ libraries = {
 playback_default_blend_time = 0.2
 
 [node name="camera_mount" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6901295, 0.94832623)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5398853, -0.4375332)
+metadata/_edit_group_ = true
 
 [node name="Camera3D" type="Camera3D" parent="camera_mount"]
-transform = Transform3D(1, 0, 0, 0, 0.9470311, 0.321142, 0, -0.321142, 0.9470311, 0.076886356, 0.29012084, 0.5742458)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16869223)
