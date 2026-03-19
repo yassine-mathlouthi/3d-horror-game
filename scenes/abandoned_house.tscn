@@ -25928,15 +25928,9 @@ mesh = SubResource("ArrayMesh_r2jq4")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara1"]
-transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -3.1763736e-22, -4.440892e-16, 3.7057691e-22, 0.03334611, -0.01163888, 0, 0.0028075948)
-light_color = Color(0.6461237, 0.38441643, 0, 1)
-light_energy = 0.67
-omni_range = 10.127
-omni_attenuation = 0.56
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="Lamparas/Lampara1"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara1_001" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(-1.2079812e-07, -1.013328, 0, 1.013328, -1.2079812e-07, 0, 0, 0, 1.0133281, 0.068319626, -0.31570008, -0.21207699)
@@ -25944,15 +25938,9 @@ mesh = SubResource("ArrayMesh_bn8mx")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara1_001"]
-transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -3.1763736e-22, -4.440892e-16, 3.7057691e-22, 0.03334611, -0.01163888, 0, 0.0028075948)
-light_color = Color(0.6461237, 0.38441643, 0, 1)
-light_energy = 0.67
-omni_range = 10.127
-omni_attenuation = 0.56
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="Lamparas/Lampara1_001"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, 3.8382726e-07, 0, 3.4893387e-07, -1.1708277, -1.1708277, 1.04680154e-07, 0, -0.1371209, -0.106770016, -0.09355995)
@@ -25960,8 +25948,9 @@ mesh = SubResource("ArrayMesh_7gxf0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_001" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, 3.8382726e-07, 0, 3.4893387e-07, -1.1708277, -1.1708277, 1.04680154e-07, 0, 0.086928025, -0.106770016, -0.09355995)
@@ -25969,8 +25958,9 @@ mesh = SubResource("ArrayMesh_4u4wb")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_001"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_002" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, 3.8382726e-07, 0, 3.4893387e-07, -1.1708277, -1.1708277, 1.04680154e-07, 0, 0.2913476, -0.106770016, -0.09355995)
@@ -25978,8 +25968,9 @@ mesh = SubResource("ArrayMesh_v7owy")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_002"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_003" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 4.5593717e-07, -1.1708277, 0, -1.1708277, -4.5593717e-07, -1.1708277, 3.3276926e-14, -1.3957354e-07, -0.19216049, 0.05453064, -0.09355995)
@@ -25987,8 +25978,9 @@ mesh = SubResource("ArrayMesh_f3e7q")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_003"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_004" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, -0.45344788, -0.06004913, -0.2149105)
@@ -25996,8 +25988,9 @@ mesh = SubResource("ArrayMesh_uffw0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_004"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_011" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978679e-08, -1.1708281, -3.4893397e-08, 3.489341e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, -0.62045753, 0.123236656, -0.21491046)
@@ -26005,10 +25998,9 @@ mesh = SubResource("ArrayMesh_uffw0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_011"]
-transform = Transform3D(0.028860396, 8.6010815e-10, 8.6010665e-10, -2.5616735e-16, 0.028860385, -8.6010676e-10, -6.661338e-16, 0, 0.028860396, -0.0037134513, 0, -0.0093438625)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
-light_energy = 7.598
-omni_range = 7.877
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_012" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978679e-08, -1.1708281, -3.4893397e-08, 3.4893418e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, -0.781795, 0.123236656, -0.21491045)
@@ -26016,8 +26008,9 @@ mesh = SubResource("ArrayMesh_uffw0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_012"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_013" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(8.081e-08, 0.32949495, -1.1235081, 2.3599901e-07, -1.1235083, -0.32949492, -1.1708277, -1.6882603e-07, -1.0906564e-07, -0.8661046, -0.096171856, -0.21491045)
@@ -26025,8 +26018,9 @@ mesh = SubResource("ArrayMesh_uffw0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_013"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_014" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(8.081e-08, 0.32949495, -1.1235081, 2.3599901e-07, -1.1235081, -0.32949492, -1.1708277, -1.68826e-07, -1.0906564e-07, -0.8661046, -0.24442911, -0.21491045)
@@ -26034,10 +26028,9 @@ mesh = SubResource("ArrayMesh_uffw0")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_014"]
-transform = Transform3D(0.028860388, 8.6010676e-10, 8.601061e-10, -6.661338e-16, 0.028860392, 4.656613e-10, -7.771561e-16, -4.656613e-10, 0.028860392, -0.0069863126, 0.002490282, -0.017840326)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
-light_energy = 3.474
-omni_range = 7.615
+transform = Transform3D(0.028860388, 8.6010676e-10, 8.6010615e-10, -2.220446e-16, 0.02886039, 0, -6.661338e-16, 0, 0.02886039, -0.007447481, 0.0023784637, -0.0048755407)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_005" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, -0.29935226, -0.06004913, -0.2149105)
@@ -26045,8 +26038,9 @@ mesh = SubResource("ArrayMesh_r6dd7")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_005"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_006" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, -0.19320717, -0.06004913, -0.2149105)
@@ -26054,8 +26048,9 @@ mesh = SubResource("ArrayMesh_2250u")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_006"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_007" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, -3.4893386e-08, -3.4893386e-08, 0, -1.1708277, -1.1708277, 3.4893386e-08, 6.978677e-08, 0.16618103, -0.12136963, -0.2149105)
@@ -26063,8 +26058,9 @@ mesh = SubResource("ArrayMesh_fc5h2")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_007"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_008" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, 0.16958427, 0.13036072, -0.2149105)
@@ -26072,8 +26068,9 @@ mesh = SubResource("ArrayMesh_vl5wp")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_008"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 2.646978e-23, 0.028860392, -0.00698632, 0, -0.011451483)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_009" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08, 0, 1.1708277, -1.1708277, -3.4893386e-08, 6.978677e-08, 0.08077919, 0.13036072, -0.2149105)
@@ -26081,8 +26078,9 @@ mesh = SubResource("ArrayMesh_ar06p")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_009"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0048209876, 0, -0.013780832)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara2_010" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, -3.4893386e-08, -3.4893386e-08, 0, -1.1708277, -1.1708277, 3.4893386e-08, 6.978677e-08, 0.26090768, -0.12136963, -0.2149105)
@@ -26090,8 +26088,9 @@ mesh = SubResource("ArrayMesh_vuiro")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_010"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, 0.09963509, -0.29403228, -0.12227164)
@@ -26099,8 +26098,9 @@ mesh = SubResource("ArrayMesh_m0l11")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_001" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, 0.058783416, -0.28455138, -0.12227164)
@@ -26108,13 +26108,19 @@ mesh = SubResource("ArrayMesh_l2esy")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_001"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_002" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, 0.09963509, -0.1303775, -0.12227164)
 mesh = SubResource("ArrayMesh_q6wx1")
 skeleton = NodePath("")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_002"]
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_003" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.28901666, 0, 0, 0, 0.28901666, 0, 0, 0, 0.28901666, -0.07574463, 0.026206054, -0.117334165)
@@ -26122,8 +26128,9 @@ mesh = SubResource("ArrayMesh_blnvx")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_003"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_004" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, -0.10661118, 0.18133484, -0.12227164)
@@ -26131,8 +26138,9 @@ mesh = SubResource("ArrayMesh_h5ddn")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_004"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_005" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.28901666, 0, 0, 0, 0.28901666, 0, 0, 0, 0.28901666, -0.2124961, 0.06971405, -0.23810351)
@@ -26140,8 +26148,9 @@ mesh = SubResource("ArrayMesh_5yssy")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_005"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_006" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, -0.36909163, -0.041039124, -0.24273287)
@@ -26149,8 +26158,9 @@ mesh = SubResource("ArrayMesh_uyvdl")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_006"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Lampara3_007" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(0.34237033, 0, 0, 0, 0.34237033, 0, 0, 0, 0.34237033, 0.058783416, -0.1303775, -0.12227164)
@@ -26158,8 +26168,9 @@ mesh = SubResource("ArrayMesh_tbx3o")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara3_007"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 3.970467e-23, 0.028860392, -0.0069863163, 0, -0.0093483925)
-light_color = Color(0.5243262, 0.35634854, 0, 1)
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e-22, -4.440892e-16, 2.1175824e-22, 0.03334611, -0.007447481, 0, 0.0032342337)
+light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
+omni_attenuation = 0.5
 
 [node name="Cajones_Puertas" type="MeshInstance3D" parent="."]
 transform = Transform3D(36.587288, 0, 0, 0, -4.3615446e-06, 36.587284, 0, -36.587284, -4.3615446e-06, -27.085424, 8.347101, -123.76596)
@@ -26608,10 +26619,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_001" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.17358819, -0.13799073, -0.12435)
@@ -26620,10 +26632,10 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_001"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_attenuation = -1.31
+spot_angle = 87.68
+spot_angle_attenuation = 0.68302184
 
 [node name="Foco_002" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.24035339, 0.09863526, -0.12435)
@@ -26632,10 +26644,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_002"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_003" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.2076873, 0.23992981, -0.12435)
@@ -26644,10 +26657,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_003"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_004" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(-4.225919e-09, -6.198202e-09, 0.07089916, 0, 0.07089916, 6.198202e-09, 0.07089916, -5.037688e-16, 8.451838e-09, -0.1082045, 0.14556885, -0.14796989)
@@ -26656,10 +26670,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_004"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_005" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.17328888, 0.0053082276, -0.040874213)
@@ -26668,10 +26683,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_005"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_006" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.18635704, -0.13085327, -0.040874213)
@@ -26680,10 +26696,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_006"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_007" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.016717376, -0.13085327, -0.040874213)
@@ -26692,10 +26709,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_007"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_008" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.016717376, 0.073325805, -0.040874213)
@@ -26704,10 +26722,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_008"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_009" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.18186638, 0.11464813, -0.040874213)
@@ -26716,10 +26735,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_009"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_010" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.18186638, 0.26128876, -0.040874213)
@@ -26728,10 +26748,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_010"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_011" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.35576728, -0.0013104248, -0.05179409)
@@ -26740,10 +26761,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_011"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_012" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.48466194, -0.0013104248, -0.05179409)
@@ -26752,10 +26774,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_012"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_013" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.59078705, -0.0013104248, -0.05179409)
@@ -26764,10 +26787,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_013"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_014" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.7012201, -0.0013104248, -0.05179409)
@@ -26776,10 +26800,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_014"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Foco_015" type="MeshInstance3D" parent="Focos_light"]
 transform = Transform3D(0.07089916, -6.1982015e-09, 0, 6.1982015e-09, 0.07089916, 0, 0, 0, -0.07089916, -0.70869184, -0.07707428, -0.051808864)
@@ -26788,10 +26813,11 @@ skeleton = NodePath("")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Focos_light/Foco_015"]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
+light_color = Color(0.74613386, 0.5000101, 0.046708927, 1)
+spot_range = 5.448
+spot_attenuation = -1.89
+spot_angle = 80.26
+spot_angle_attenuation = 2.000001
 
 [node name="Estanterias" type="MeshInstance3D" parent="."]
 transform = Transform3D(23.510277, 0, 0, 0, -2.8026434e-06, 23.510275, 0, -23.510275, -2.8026434e-06, -27.620634, 7.6442122, -127.58992)
@@ -27849,13 +27875,6 @@ skeleton = NodePath("")
 transform = Transform3D(0.024179865, 5.697988e-10, -2.0373891e-09, -2.113871e-09, 0.0074396576, -0.023006896, -8.470577e-11, -0.023006896, -0.0074396576, 4.196167e-06, -0.00093708036, 0.011853454)
 mesh = SubResource("ArrayMesh_0j0jt")
 skeleton = NodePath("")
-
-[node name="SpotLight3D" type="SpotLight3D" parent="Base/Luz/Foco_016"]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
-light_color = Color(0.59200567, 0.314701, 0.025217144, 1)
-spot_attenuation = -1.47
-spot_angle = 72.84
-spot_angle_attenuation = 0.87055063
 
 [node name="Conector_001" type="MeshInstance3D" parent="Base"]
 transform = Transform3D(0.40432087, 7.4601093e-16, 0, -5.486446e-16, 0.54976904, 0, 0, 0, 0.40432087, -0.087200314, 0.11440979, -0.09552339)
