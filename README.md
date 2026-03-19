@@ -36,6 +36,10 @@ No other dependencies or build tools are required. Godot handles everything nati
 
 ---
 
+<img width="1146" height="643" alt="Capture d&#39;écran 2026-03-19 022927" src="https://github.com/user-attachments/assets/9259daf7-e984-4283-98a6-d6826f55c17b" />
+<img width="1148" height="643" alt="Capture d&#39;écran 2026-02-17 141110" src="https://github.com/user-attachments/assets/8eef8db4-d4f7-4cb6-8e69-b25342ef0841" />
+
+
 ## Getting Started
 
 ### 1. Clone the repository
