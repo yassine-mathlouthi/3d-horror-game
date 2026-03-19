@@ -1,9 +1,9 @@
 # 3D Horror Game 🎮👻
 
 A first-person 3D horror exploration game built with **Godot Engine 4.5**. Wander through an eerie abandoned house and its surroundings, navigating a dark open world filled with atmospheric fog, dimly lit environments, and unsettling scenery.
-[Youtube link :](https://youtube.com/playlist?list=PLBFg2OWUD47PpNR7lZwW6VUz8uBKtPf6l&si=fzWzLXoSvY8qrllY)
----
 
+---
+[Youtube](https://youtube.com/playlist?list=PLBFg2OWUD47PpNR7lZwW6VUz8uBKtPf6l&si=fzWzLXoSvY8qrllY)
 ## Features
 
 - 🕹️ **First-Person Exploration** – Immersive first-person perspective with smooth mouse-look controls
