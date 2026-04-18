@@ -1,4 +1,4 @@
-[gd_scene load_steps=1423 format=4 uid="uid://bulrp6prqojit"]
+[gd_scene load_steps=1424 format=4 uid="uid://bulrp6prqojit"]
 
 [ext_resource type="Texture2D" uid="uid://ceou2pqqiofvu" path="res://assets/models/Abandoned_House/Textures/Madera4.jpg" id="1_o1lng"]
 [ext_resource type="Texture2D" uid="uid://bs0nyjb4kpqtg" path="res://assets/models/Abandoned_House/Textures/telaraña.png" id="2_u3cm2"]
@@ -18186,6 +18186,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_vgkyb")
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t2htm"]
+data = PackedVector3Array(-0.015299999, -0.0402, 0, -0.015299999, 0.0156, 0, -0.0075999997, 0.0156, 0, -0.0075999997, 0.0156, 0, -0.0075999997, -0.0402, 0, -0.015299999, -0.0402, 0, -0.0075999997, -0.0402, 0, -0.0075999997, 0.0156, 0, 0.0001, 0.0156, 0, 0.0001, 0.0156, 0, 0.0019999999, -0.0402, 0, -0.0075999997, -0.0402, 0, 0.0019999999, -0.0402, 0, 0.0001, 0.0156, 0, 0.0201, 0.0156, 0, 0.0201, 0.0156, 0, 0.0201, -0.0402, 0, 0.0019999999, -0.0402, 0)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6yjf4"]
 resource_name = "Piso_cocina"
 vertex_color_use_as_albedo = true
@@ -18223,9 +18226,6 @@ _surfaces = [{
 }]
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_xkq42")
-
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t2htm"]
-data = PackedVector3Array(-0.015299999, -0.0402, 0, -0.015299999, 0.0156, 0, -0.0075999997, 0.0156, 0, -0.0075999997, 0.0156, 0, -0.0075999997, -0.0402, 0, -0.015299999, -0.0402, 0, -0.0075999997, -0.0402, 0, -0.0075999997, 0.0156, 0, 0.0001, 0.0156, 0, 0.0001, 0.0156, 0, 0.0019999999, -0.0402, 0, -0.0075999997, -0.0402, 0, 0.0019999999, -0.0402, 0, 0.0001, 0.0156, 0, 0.0201, 0.0156, 0, 0.0201, 0.0156, 0, 0.0201, -0.0402, 0, 0.0019999999, -0.0402, 0)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3vqww"]
 _surfaces = [{
@@ -18361,6 +18361,9 @@ shadow_mesh = SubResource("ArrayMesh_lajxd")
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5bjb6"]
 points = PackedVector3Array(0.060543157, 0.038813956, 0.011198564, 0.060543157, -0.038936615, 0.011198564, 0.060543157, 0.038813956, 0.009554501, -0.06649218, 0.038813956, 0.011198564, 0.060543157, -0.038936615, 0.009554501, -0.06649218, -0.038936615, 0.011198564, 0.052460447, 0.029208355, -0.012292019, -0.06649218, 0.038813956, 0.009554501, -0.06649218, -0.038936615, 0.009554501, 0.052460447, -0.029331014, -0.012292019, 0.020776227, 0.029208355, -0.012292019, -0.058421902, 0.029208355, -0.0040119104, -0.058421902, -0.029331014, -0.0040119104, 0.020776227, -0.029331014, -0.012292019)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o1lng"]
+size = Vector3(0.059114933, 0.001, 0.016595602)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lart0"]
 _surfaces = [{
@@ -28215,6 +28218,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10846248, 0.036808778, -0.
 mesh = SubResource("ArrayMesh_op8ru")
 skeleton = NodePath("")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa/Piso_Baño_001"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa/Piso_Baño_001/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_t2htm")
+
 [node name="Piso_Cocina" type="MeshInstance3D" parent="Casa"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002350769, 0.054021608, -0.03275154)
 mesh = SubResource("ArrayMesh_tgb0j")
@@ -28254,6 +28262,11 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Casa/Pisina/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_5bjb6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Casa/Pisina/StaticBody3D"]
+transform = Transform3D(-0.8162522, -0.5779303, -3.7195033e-08, 1.708166e-08, 4.024194e-08, -1.0001315, 0.57794327, -0.81624585, -2.2972117e-08, -0.052507907, -0.18050444, 0.029511562)
+shape = SubResource("BoxShape3D_o1lng")
+debug_color = Color(0.8744521, 0.15911019, 0.022509983, 1)
 
 [node name="Escaleras_Pisina" type="MeshInstance3D" parent="Casa"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04837555, 0.17697877, -0.04395453)
