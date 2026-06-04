@@ -24,6 +24,18 @@ func _input(event: InputEvent):
 		camera_mount.rotate_x(deg_to_rad(-event.relative.y* SENSE))
 
 func _physics_process(delta: float) -> void:
+	if %EyesCast.is_colliding():
+		var colider = %EyesCast.get_collider()
+		if colider != null and colider.has_method(\"intreact\"):
+			%KeyText.show()
+			if Input.is_action_just_pressed(\"intreact\"):
+				colider.intreact()
+		else:
+			%KeyText.hide()
+	else:
+		%KeyText.hide()
+	
+	
 	# Add the gravity.
 	if Input.is_action_pressed(\"run\"):
 		SPEED=RUN_SPEED
@@ -63,6 +75,7 @@ func _physics_process(delta: float) -> void:
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
 radius = 0.24853516
+height = 1.6313477
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lj8y3"]
 resource_name = "Beta_Joints_MAT1"
@@ -3998,3 +4011,27 @@ metadata/_edit_group_ = true
 
 [node name="Camera3D" type="Camera3D" parent="camera_mount"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16869223)
+
+[node name="EyesCast" type="RayCast3D" parent="camera_mount"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.38417834)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="KeyText" type="Label" parent="CanvasLayer/BoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Press \"E\" to intreact with this item"
