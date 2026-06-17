@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://ddwjxf64t3pca"]
+[gd_scene load_steps=12 format=3 uid="uid://ddwjxf64t3pca"]
 
 [ext_resource type="Texture2D" uid="uid://pr2go6uq60pl" path="res://assets/sky/mud_road_puresky_4k.exr" id="1_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dupkice01xnrn" path="res://assets/cgshare-book-ground-floor-001.jpg" id="1_k0juu"]
 [ext_resource type="PackedScene" uid="uid://bxtj03lwijts6" path="res://scenes/player.tscn" id="5_71j4m"]
-[ext_resource type="PackedScene" uid="uid://du3r3t22vlk2s" path="res://scenes/Key.tscn" id="6_i7141"]
+[ext_resource type="PackedScene" uid="uid://du3r3t22vlk2s" path="res://scenes/key.tscn" id="6_i7141"]
 [ext_resource type="PackedScene" uid="uid://ca3fpngi8vwlk" path="res://scenes/touch_controllers.tscn" id="6_qfnet"]
+[ext_resource type="PackedScene" uid="uid://c3hcwrq4gs03t" path="res://scenes/item_list.tscn" id="7_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://bulrp6prqojit" path="res://scenes/abandoned_house.tscn" id="7_i7141"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_71j4m"]
@@ -63,3 +64,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.20937, 2.027008, 96.60977)
 
 [node name="Key" parent="." instance=ExtResource("6_i7141")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 10.997447, 2.9516892, -23.779478)
+
+[node name="ItemList" parent="." instance=ExtResource("7_4mrxx")]

@@ -17,6 +17,10 @@ func _process(delta: float) -> void:
 
 func intreact():
 	print(\"intreacting\")
+	Inventory.add_item(
+		\"key\",
+		preload(\"res://assets/Icons/key.png\")
+	)
 	queue_free()
 "
 

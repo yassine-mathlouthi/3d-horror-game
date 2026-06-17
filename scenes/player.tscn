@@ -2,7 +2,9 @@
 
 [sub_resource type="GDScript" id="GDScript_3vyb7"]
 script/source = "extends CharacterBody3D
-
+@onready var camera = $camera_mount
+var base_cam_pos: Vector3
+var bob_time := 0.0
 
 var SPEED = 5.0
 const JUMP_VELOCITY = 4.5
@@ -16,7 +18,8 @@ var isRunnig = false
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
+	base_cam_pos = camera.position
+	
 func _input(event: InputEvent):
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x* SENSE))
@@ -69,7 +72,17 @@ func _physics_process(delta: float) -> void:
 			animation_player.play(\"idle\")
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+	var is_moving = direction.length() > 0.1 and is_on_floor()
+	if is_moving:
+		bob_time += delta * (2.0 if isRunnig else 1.2)
 
+		var bob_strength = 0.05 if isRunnig else 0.03
+
+		camera.position.y = base_cam_pos.y + sin(bob_time * 8.0) * bob_strength
+		camera.position.x = base_cam_pos.x + cos(bob_time * 4.0) * bob_strength * 0.5
+	else:
+		bob_time = 0.0
+		camera.position = camera.position.lerp(base_cam_pos, 0.1)
 	move_and_slide()
 "
 
