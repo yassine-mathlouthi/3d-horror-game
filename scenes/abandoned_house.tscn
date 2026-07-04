@@ -70,7 +70,7 @@
 resource_name = "Madera4.001"
 albedo_texture = ExtResource("1_o1lng")
 rim_enabled = true
-disable_receive_shadows = true
+disable_receive_shadows = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mkygo"]
 _surfaces = [{
@@ -15285,9 +15285,10 @@ points = PackedVector3Array(0.0033877098, 0.0071526947, 0.0048446376, 0.00338770
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1arfk"]
 resource_name = "Plastico"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("25_62e8n")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5x3uw"]
 _surfaces = [{
@@ -16320,8 +16321,10 @@ shadow_mesh = SubResource("ArrayMesh_i1hiq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6huft"]
 resource_name = "Ban"
-vertex_color_use_as_albedo = true
-emission_enabled = true
+cull_mode = 2
+diffuse_mode = 2
+albedo_color = Color(0.55, 0.45, 0.32, 1)
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_p510w"]
 _surfaces = [{
@@ -17873,9 +17876,10 @@ shadow_mesh = SubResource("ArrayMesh_1tidm")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8ssi"]
 resource_name = "Piso"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("37_rwwil")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pub81"]
 resource_name = "Madera4"
@@ -17885,21 +17889,24 @@ emission_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gshsc"]
 resource_name = "Pared"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("38_i7qix")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opqxv"]
 resource_name = "Ladrillos"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("39_23tk8")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5o8ia"]
 resource_name = "Cuar2"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("40_g6xpx")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ed66s"]
 resource_name = "Madera5"
@@ -17909,15 +17916,17 @@ emission_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6hbv"]
 resource_name = "Techo"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("42_fs8q0")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5gv4d"]
 resource_name = "Pared2"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("43_h1ed3")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ywr6f"]
 _surfaces = [{
@@ -18151,9 +18160,10 @@ shadow_mesh = SubResource("ArrayMesh_ywr6f")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8blqv"]
 resource_name = "Piso2"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("44_fjmys")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vgkyb"]
 _surfaces = [{
@@ -18192,9 +18202,10 @@ data = PackedVector3Array(-0.015299999, -0.0402, 0, -0.015299999, 0.0156, 0, -0.
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6yjf4"]
 resource_name = "Piso_cocina"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("45_0ncov")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xkq42"]
 _surfaces = [{
@@ -18265,9 +18276,10 @@ points = PackedVector3Array(-0.06547946, -0.08022125, 0, 0.06547944, -0.08022125
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_naqjf"]
 resource_name = "Piso_Piscina"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("46_v4ulq")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7tdo5"]
 _surfaces = [{
@@ -22633,9 +22645,10 @@ data = PackedVector3Array(3.6964998, 0.049599998, -0.00029999999, 3.6964998, -0.
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0w43m"]
 resource_name = "Casa_f"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("61_luwtm")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_y3kpe"]
 _surfaces = [{
@@ -22671,9 +22684,10 @@ shadow_mesh = SubResource("ArrayMesh_y3kpe")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hsb11"]
 resource_name = "Muro"
-vertex_color_use_as_albedo = true
+cull_mode = 2
+diffuse_mode = 2
 albedo_texture = ExtResource("62_7j7vi")
-emission_enabled = true
+roughness = 0.65
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mn3e8"]
 _surfaces = [{
