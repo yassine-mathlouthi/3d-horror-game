@@ -3940,6 +3940,25 @@ metadata/_edit_group_ = true
 [node name="Camera3D" type="Camera3D" parent="camera_mount"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0)
 
+[node name="Flashlight" type="SpotLight3D" parent="camera_mount/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0118174255)
+light_color = Color(1, 0.86, 0.62, 1)
+light_energy = 2.4
+light_cull_mask = 1048573
+shadow_enabled = false
+spot_range = 18.0
+spot_attenuation = 0.9
+spot_angle = 62.0
+spot_angle_attenuation = 0.75
+
+[node name="FlashlightFill" type="OmniLight3D" parent="camera_mount/Camera3D"]
+light_color = Color(0.68, 0.76, 0.9, 1)
+light_energy = 0.22
+light_cull_mask = 1048573
+omni_range = 7.0
+omni_attenuation = 2.2
+shadow_enabled = false
+
 [node name="EyesCast" type="RayCast3D" parent="camera_mount"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.38417834)
