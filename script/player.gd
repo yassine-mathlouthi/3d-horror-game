@@ -3,8 +3,8 @@ extends CharacterBody3D
 const JUMP_VELOCITY := 4.5
 const RUN_SPEED := 3.2
 const WALKING_SPEED := 1.8
-const MIN_LOOK_ANGLE := deg_to_rad(-75.0)
-const MAX_LOOK_ANGLE := deg_to_rad(75.0)
+const MIN_LOOK_ANGLE := deg_to_rad(-60.0)
+const MAX_LOOK_ANGLE := deg_to_rad(70.0)
 const FIRST_PERSON_HIDDEN_LAYER := 2
 
 @export var sensitivity := 0.12
@@ -25,7 +25,7 @@ var look_pitch := 0.0
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	base_camera_position = camera_mount.position
-	camera.near = 0.01
+	camera.near = 0.05
 	camera.cull_mask &= ~FIRST_PERSON_HIDDEN_LAYER
 	_hide_from_first_person_camera(visuals)
 	key_text.hide()

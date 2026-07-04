@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dshnwkdv0qio1" path="res://script/player.gd" id="1_3vyb7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
-radius = 0.26953125
+radius = 0.42
 height = 1.6089478
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lj8y3"]
@@ -3934,11 +3934,11 @@ libraries = {
 playback_default_blend_time = 0.2
 
 [node name="camera_mount" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5398853, -0.33372098)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5398853, 0)
 metadata/_edit_group_ = true
 
 [node name="Camera3D" type="Camera3D" parent="camera_mount"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0.16905427)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0)
 
 [node name="EyesCast" type="RayCast3D" parent="camera_mount"]
 unique_name_in_owner = true
