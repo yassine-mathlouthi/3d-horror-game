@@ -5,10 +5,12 @@ const RUN_SPEED := 3.2
 const WALKING_SPEED := 1.8
 const MIN_LOOK_ANGLE := deg_to_rad(-75.0)
 const MAX_LOOK_ANGLE := deg_to_rad(75.0)
+const FIRST_PERSON_HIDDEN_LAYER := 2
 
 @export var sensitivity := 0.12
 
 @onready var camera_mount: Node3D = $camera_mount
+@onready var camera: Camera3D = $camera_mount/Camera3D
 @onready var eyes_cast: RayCast3D = $camera_mount/EyesCast
 @onready var key_text: Label = $CanvasLayer/BoxContainer/KeyText
 @onready var animation_player: AnimationPlayer = $visuals/mixamo_base/AnimationPlayer
@@ -23,6 +25,9 @@ var look_pitch := 0.0
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	base_camera_position = camera_mount.position
+	camera.near = 0.01
+	camera.cull_mask &= ~FIRST_PERSON_HIDDEN_LAYER
+	_hide_from_first_person_camera(visuals)
 	key_text.hide()
 
 
@@ -106,3 +111,11 @@ func _update_camera_bob(delta: float, direction: Vector3) -> void:
 	else:
 		bob_time = 0.0
 		camera_mount.position = camera_mount.position.lerp(base_camera_position, 0.1)
+
+
+func _hide_from_first_person_camera(node: Node) -> void:
+	if node is VisualInstance3D:
+		node.layers = FIRST_PERSON_HIDDEN_LAYER
+
+	for child in node.get_children():
+		_hide_from_first_person_camera(child)
