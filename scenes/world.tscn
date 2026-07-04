@@ -17,10 +17,10 @@ sky_material = SubResource("PanoramaSkyMaterial_71j4m")
 
 [sub_resource type="Environment" id="Environment_i7141"]
 background_mode = 2
-background_energy_multiplier = 0.22
+background_energy_multiplier = 0.26
 sky = SubResource("Sky_qfnet")
 ambient_light_color = Color(0.035, 0.045, 0.065, 1)
-ambient_light_energy = 0.09
+ambient_light_energy = 0.16
 fog_enabled = true
 fog_light_energy = 0.09
 fog_density = 0.014

@@ -27,10 +27,6 @@ func _fix_room_surface_materials(mesh_instance: MeshInstance3D) -> void:
 		if not material is StandardMaterial3D:
 			continue
 
-		var material_name := material.resource_name.to_lower()
-		if not _is_room_surface_material(material_name):
-			continue
-
 		var fixed_material := material.duplicate() as StandardMaterial3D
 		fixed_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 		fixed_material.diffuse_mode = BaseMaterial3D.DIFFUSE_LAMBERT_WRAP
@@ -39,18 +35,6 @@ func _fix_room_surface_materials(mesh_instance: MeshInstance3D) -> void:
 		fixed_material.metallic = 0.0
 		fixed_material.roughness = 0.65
 		fixed_material.disable_receive_shadows = false
+		if fixed_material.albedo_texture == null and fixed_material.albedo_color.get_luminance() < 0.08:
+			fixed_material.albedo_color = Color(0.28, 0.23, 0.18, 1.0)
 		mesh_instance.set_surface_override_material(surface_index, fixed_material)
-
-
-func _is_room_surface_material(material_name: String) -> bool:
-	return (
-		material_name.contains("pared")
-		or material_name.contains("piso")
-		or material_name.contains("muro")
-		or material_name.contains("techo")
-		or material_name.contains("ladrillos")
-		or material_name.contains("casa")
-		or material_name.contains("cuar")
-		or material_name.contains("ban")
-		or material_name.contains("plastico")
-	)
