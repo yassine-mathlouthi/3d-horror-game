@@ -1,4 +1,4 @@
-[gd_scene load_steps=1425 format=4 uid="uid://bulrp6prqojit"]
+[gd_scene load_steps=1424 format=4 uid="uid://bulrp6prqojit"]
 
 [ext_resource type="Texture2D" uid="uid://ceou2pqqiofvu" path="res://assets/models/Abandoned_House/Textures/Madera4.jpg" id="1_o1lng"]
 [ext_resource type="Texture2D" uid="uid://bs0nyjb4kpqtg" path="res://assets/models/Abandoned_House/Textures/telaraña.png" id="2_u3cm2"]
@@ -64,7 +64,7 @@
 [ext_resource type="Texture2D" uid="uid://baldssk5rdvss" path="res://assets/models/Abandoned_House/Textures/Muro.jpg" id="62_7j7vi"]
 [ext_resource type="Texture2D" uid="uid://b2oe2eecdtu2d" path="res://assets/models/Abandoned_House/Textures/Metal4.jpg" id="63_sbuks"]
 [ext_resource type="Texture2D" uid="uid://dgtbnhnxjp1yl" path="res://assets/models/Abandoned_House/Textures/Cue.jpg" id="64_nnlgk"]
-[ext_resource type="Script" path="res://script/scene_runtime_optimizer.gd" id="65_optimizer"]
+[ext_resource type="Script" uid="uid://cyvhfclf7gngk" path="res://script/scene_runtime_optimizer.gd" id="65_optimizer"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrlh4"]
 resource_name = "Madera4.001"
@@ -18433,9 +18433,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8aj24")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k5etw"]
-points = PackedVector3Array(-0.015297456, -0.040169768, 0, -0.015297456, -0.040169768, 0.015879821, -0.015297456, 0.01555603, 0, 0.020125763, -0.040169768, 0, 0.020125763, -0.040169768, 0.015879821, -0.015297456, 0.01555603, 0.015879821, 0.020125763, 0.01555603, 0, 0.020125763, 0.01555603, 0.015879821)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4418l"]
 resource_name = "Pasto2"
 vertex_color_use_as_albedo = true
@@ -28296,9 +28293,6 @@ mesh = SubResource("ArrayMesh_x4td0")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Casa/Pared_Cocina"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa/Pared_Cocina/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_k5etw")
 
 [node name="Patio" type="MeshInstance3D" parent="Casa"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06519188, 0.012716522, -0.03707302)

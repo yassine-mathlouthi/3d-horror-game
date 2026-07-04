@@ -6,12 +6,12 @@ const WALKING_SPEED := 1.8
 const MIN_LOOK_ANGLE := deg_to_rad(-60.0)
 const MAX_LOOK_ANGLE := deg_to_rad(70.0)
 const FIRST_PERSON_HIDDEN_LAYER := 2
+const INTERACTION_DISTANCE := 3.0
 
 @export var sensitivity := 0.12
 
 @onready var camera_mount: Node3D = $camera_mount
 @onready var camera: Camera3D = $camera_mount/Camera3D
-@onready var eyes_cast: RayCast3D = $camera_mount/EyesCast
 @onready var key_text: Label = $CanvasLayer/BoxContainer/KeyText
 @onready var animation_player: AnimationPlayer = $visuals/mixamo_base/AnimationPlayer
 @onready var visuals: Node3D = $visuals
@@ -69,11 +69,19 @@ func _physics_process(delta: float) -> void:
 
 
 func _handle_interaction() -> void:
-	if not eyes_cast.is_colliding():
+	var query := PhysicsRayQueryParameters3D.create(
+		camera.global_position,
+		camera.global_position + (-camera.global_basis.z * INTERACTION_DISTANCE)
+	)
+	query.exclude = [self]
+	query.collide_with_areas = true
+
+	var hit := get_world_3d().direct_space_state.intersect_ray(query)
+	if hit.is_empty():
 		key_text.hide()
 		return
 
-	var collider := eyes_cast.get_collider()
+	var collider: Object = hit["collider"]
 	if collider == null:
 		key_text.hide()
 		return
