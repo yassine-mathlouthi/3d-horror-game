@@ -86,13 +86,10 @@ func _handle_interaction() -> void:
 		key_text.hide()
 		return
 
-	if collider.has_method("interact") or collider.has_method("intreact"):
+	if collider.has_method("interact"):
 		key_text.show()
-		if Input.is_action_just_pressed("intreact"):
-			if collider.has_method("interact"):
-				collider.interact()
-			else:
-				collider.intreact()
+		if Input.is_action_just_pressed("interact"):
+			collider.interact()
 	else:
 		key_text.hide()
 

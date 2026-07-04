@@ -6,7 +6,3 @@ class_name Item
 
 func interact() -> void:
 	pass
-
-
-func intreact() -> void:
-	interact()
