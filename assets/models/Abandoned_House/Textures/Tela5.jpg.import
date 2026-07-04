@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpuuuyl550esd"
-path.s3tc="res://.godot/imported/Tela5.jpg-515956635b411cf5e1f1ea3338b44add.s3tc.ctex"
+path.s3tc="res://.godot/imported/Tela5.jpg-0babfec1fa0eec9d2afe901ffa1657ef.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Tela5.jpg"
-dest_files=["res://.godot/imported/Tela5.jpg-515956635b411cf5e1f1ea3338b44add.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Tela5.jpg"
+dest_files=["res://.godot/imported/Tela5.jpg-0babfec1fa0eec9d2afe901ffa1657ef.s3tc.ctex"]
 
 [params]
 

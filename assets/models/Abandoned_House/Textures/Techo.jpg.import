@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx08lovlwl508"
-path.s3tc="res://.godot/imported/Techo.jpg-5ebb68578ba543b1bd04b90cb9d264b7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Techo.jpg-a1f742755e3f04f1f91b85f7d9db9169.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Techo.jpg"
-dest_files=["res://.godot/imported/Techo.jpg-5ebb68578ba543b1bd04b90cb9d264b7.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Techo.jpg"
+dest_files=["res://.godot/imported/Techo.jpg-a1f742755e3f04f1f91b85f7d9db9169.s3tc.ctex"]
 
 [params]
 

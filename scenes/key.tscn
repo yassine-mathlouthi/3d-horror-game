@@ -1,37 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://du3r3t22vlk2s"]
 
 [ext_resource type="ArrayMesh" uid="uid://dehkpncxajexu" path="res://assets/Key/21929_Key_v1.obj" id="1_px33k"]
+[ext_resource type="Script" path="res://script/key.gd" id="2_yk2u2"]
 
-[sub_resource type="GDScript" id="GDScript_yk2u2"]
-script/source = "extends StaticBody3D
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-func intreact():
-	print(\"intreacting\")
-	Inventory.add_item(
-		\"key\",
-		preload(\"res://assets/Icons/key.png\")
-	)
-	queue_free()
-"
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yk2u2"]
-points = PackedVector3Array(-0.8685111, -0.15691112, 3.1918325, 0.49582982, 0.13034967, 4.197006, -0.79646385, 0.20220001, 2.8327777, 0.567877, -0.15691112, 0.10387087, -0.15006395, 0.13034967, -0.040111065, 0.4242888, -0.15691112, 4.268997, -0.29365212, 0.13034967, 4.48452, 0.7833436, 0.20220001, 2.8327777, -0.15006395, -0.15691112, -0.040111065, 0.8552221, -0.15691112, 3.1918325, 0.567877, 0.13034967, 0.10387087, -0.2219424, -0.15691112, 4.48452, -0.8685111, 0.13034967, 2.8327777, 0.1369437, 0.20220001, 1.827604, -0.79646385, 0.20220001, 3.2629237, 0.1369437, 0.13034967, 4.556511, 0.8552221, 0.13034967, 2.8327777, 0.7833436, 0.20220001, 3.2629237, -0.43740904, 0.13034967, 4.340988, -0.8685111, -0.15691112, 2.9043188, -0.5809972, 0.20220001, 3.4788964, 0.1369437, 0.13034967, -0.040111065, 0.20882216, -0.15691112, 4.48452, 0.49582982, -0.08506077, 4.268997, -0.36553058, -0.15691112, 4.340988, 0.8552221, -0.15691112, 2.9043188, -0.15006395, 0.20220001, 1.827604, 0.567877, 0.20220001, 3.4788964, 0.49582982, 0.058534466, 4.268997, 0.28053188, 0.13034967, 4.48452, 0.06506524, -0.15691112, -0.040111065, -0.15006395, 0.13034967, 4.556511)
+[sub_resource type="BoxShape3D" id="BoxShape3D_yk2u2"]
+size = Vector3(1.8, 0.5, 4.7)
 
 [node name="Key" type="Node3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 
 [node name="Key" type="StaticBody3D" parent="."]
-script = SubResource("GDScript_yk2u2")
+script = ExtResource("2_yk2u2")
 
 [node name="21929KeyV1" type="MeshInstance3D" parent="Key"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.117094874, 0, -1.7401712)
@@ -40,5 +19,5 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Key"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.117094874, 0, -1.7401712)
-shape = SubResource("ConvexPolygonShape3D_yk2u2")
+shape = SubResource("BoxShape3D_yk2u2")
 debug_color = Color(0.64327055, 0.5236604, 0, 0.41960785)

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs0nyjb4kpqtg"
-path.s3tc="res://.godot/imported/telaraña.png-5e4b817d35588bf12f31e1ba46cce768.s3tc.ctex"
+path.s3tc="res://.godot/imported/telaraña.png-959b7b74f29b6a0102a60f505b66cde0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/telaraña.png"
-dest_files=["res://.godot/imported/telaraña.png-5e4b817d35588bf12f31e1ba46cce768.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/telaraña.png"
+dest_files=["res://.godot/imported/telaraña.png-959b7b74f29b6a0102a60f505b66cde0.s3tc.ctex"]
 
 [params]
 

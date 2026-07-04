@@ -1,53 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://c3hcwrq4gs03t"]
 
-[sub_resource type="GDScript" id="GDScript_37alu"]
-script/source = "extends CanvasLayer
-
-@onready var item_list: VBoxContainer = $Panel/ItemList
-
-
-func _process(delta: float):
-	update_inventory()
-	
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	hide()
-
-
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed(\"Inventory\"):
-		visible=!visible
-
-
-
-func update_inventory():
-	for child in item_list.get_children():
-		child.queue_free()
-	
-	for item in Inventory.items:
-		var row=HBoxContainer.new()
-		
-		var icon = TextureRect.new()
-		
-		icon.texture = item[\"icon\"]
-		icon.custom_minimum_size = Vector2(24,24)
-		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		
-		var label = Label.new()
-		label.text = item[\"name\"]
-		
-		row.add_child(icon)
-		row.add_child(label)
-		
-		item_list.add_child(row)
-		
-		
-	
-"
+[ext_resource type="Script" path="res://script/item_list.gd" id="1_37alu"]
 
 [node name="ItemList" type="CanvasLayer"]
-script = SubResource("GDScript_37alu")
+script = ExtResource("1_37alu")
 
 [node name="Panel" type="Panel" parent="."]
 offset_right = 256.0

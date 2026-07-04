@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cn23lo66w637o"
-path.s3tc="res://.godot/imported/Plastico.jpg-b4844f77a23c5423a274bda3de0d5af9.s3tc.ctex"
+path.s3tc="res://.godot/imported/Plastico.jpg-7aa0d0f3c9b4ea3c8274b14506b16fa6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Plastico.jpg"
-dest_files=["res://.godot/imported/Plastico.jpg-b4844f77a23c5423a274bda3de0d5af9.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Plastico.jpg"
+dest_files=["res://.godot/imported/Plastico.jpg-7aa0d0f3c9b4ea3c8274b14506b16fa6.s3tc.ctex"]
 
 [params]
 
