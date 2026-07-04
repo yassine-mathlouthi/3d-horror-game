@@ -64,6 +64,7 @@
 [ext_resource type="Texture2D" uid="uid://baldssk5rdvss" path="res://assets/models/Abandoned_House/Textures/Muro.jpg" id="62_7j7vi"]
 [ext_resource type="Texture2D" uid="uid://b2oe2eecdtu2d" path="res://assets/models/Abandoned_House/Textures/Metal4.jpg" id="63_sbuks"]
 [ext_resource type="Texture2D" uid="uid://dgtbnhnxjp1yl" path="res://assets/models/Abandoned_House/Textures/Cue.jpg" id="64_nnlgk"]
+[ext_resource type="Script" uid="uid://cyvhfclf7gngk" path="res://script/scene_runtime_optimizer.gd" id="65_optimizer"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrlh4"]
 resource_name = "Madera4.001"
@@ -18432,9 +18433,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8aj24")
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k5etw"]
-points = PackedVector3Array(-0.015297456, -0.040169768, 0, -0.015297456, -0.040169768, 0.015879821, -0.015297456, 0.01555603, 0, 0.020125763, -0.040169768, 0, 0.020125763, -0.040169768, 0.015879821, -0.015297456, 0.01555603, 0.015879821, 0.020125763, 0.01555603, 0, 0.020125763, 0.01555603, 0.015879821)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4418l"]
 resource_name = "Pasto2"
 vertex_color_use_as_albedo = true
@@ -24205,6 +24203,7 @@ points = PackedVector3Array(0.0014900165, -0.0030115112, 0.013449613, 0.00156253
 points = PackedVector3Array(-0.0027586883, -0.0027586883, -0.0029092908, -0.0027586883, 0.0027586003, -0.0029092908, 0.002402871, -0.0027586883, -0.0029092908, -0.0027586883, -0.0027586883, 0.0027576273, -0.0025939792, 0.0029520127, 0.0012967114, 0.0007633583, 0.002918473, -0.0019261412, 0.0009139206, 0.002918473, -0.0019896594, 0.002402871, 0.0027586003, -0.0029092908, -0.0027586883, 0.0027586003, 0.0027576273, 0.002402871, -0.0027586883, 0.0027576273, 0.0010968186, -0.0010084724, 0.0111972485, -0.001498613, 0.0008736665, 0.006481721, -0.0025939792, 0.0029520127, 0.0021735372, 0.00020102318, 0.0029520127, 0.0012967114, 0.0010649883, 0.002918473, -0.0019261412, 0.0011276384, 0.002918473, -0.001775631, 0.002402871, 0.0027586003, 0.0027576273, -0.001498613, 0.0011995607, 0.006481721, -0.0012161825, 0.0013627876, 0.006481721, 0.00020102318, 0.0029520127, 0.0021735372)
 
 [node name="Abandoned_House" type="Node3D"]
+script = ExtResource("65_optimizer")
 
 [node name="Colision" type="MeshInstance3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -32.974716, 8.364936, -125.980354)
@@ -28294,9 +28293,6 @@ mesh = SubResource("ArrayMesh_x4td0")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Casa/Pared_Cocina"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa/Pared_Cocina/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_k5etw")
 
 [node name="Patio" type="MeshInstance3D" parent="Casa"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06519188, 0.012716522, -0.03707302)

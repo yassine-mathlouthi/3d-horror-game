@@ -1,94 +1,10 @@
 [gd_scene load_steps=15 format=4 uid="uid://bxtj03lwijts6"]
 
-[sub_resource type="GDScript" id="GDScript_3vyb7"]
-script/source = "extends CharacterBody3D
-@onready var camera = $camera_mount
-var base_cam_pos: Vector3
-var bob_time := 0.0
-
-var SPEED = 5.0
-const JUMP_VELOCITY = 4.5
-const RUN_SPEED = 5
-const WALKING_SPEED = 3.0
-var isRunnig = false
-@export var SENSE = 0.4 
-@onready var camera_mount: Node3D = $camera_mount
-@onready var animation_player: AnimationPlayer = $visuals/mixamo_base/AnimationPlayer
-@onready var visuals: Node3D = $visuals
-
-func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	base_cam_pos = camera.position
-	
-func _input(event: InputEvent):
-	if event is InputEventMouseMotion:
-		rotate_y(deg_to_rad(-event.relative.x* SENSE))
-		visuals.rotate_y(deg_to_rad(event.relative.x* SENSE))
-		camera_mount.rotate_x(deg_to_rad(-event.relative.y* SENSE))
-
-func _physics_process(delta: float) -> void:
-	if %EyesCast.is_colliding():
-		var colider = %EyesCast.get_collider()
-		if colider != null and colider.has_method(\"intreact\"):
-			%KeyText.show()
-			if Input.is_action_just_pressed(\"intreact\"):
-				colider.intreact()
-		else:
-			%KeyText.hide()
-	else:
-		%KeyText.hide()
-	
-	
-	# Add the gravity.
-	if Input.is_action_pressed(\"run\"):
-		SPEED=RUN_SPEED
-		isRunnig=true
-	else:
-		SPEED=WALKING_SPEED
-		isRunnig=false
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector(\"right\", \"left\", \"forward\", \"back\")
-	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
-		if isRunnig:
-			if animation_player.current_animation!=\"running\":
-				animation_player.play(\"running\")
-		else:
-			if animation_player.current_animation!=\"walking\":
-				animation_player.play(\"walking\")
-		visuals.look_at(direction+position)
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-	else:
-		if animation_player.current_animation!=\"idle\":
-			animation_player.play(\"idle\")
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
-	var is_moving = direction.length() > 0.1 and is_on_floor()
-	if is_moving:
-		bob_time += delta * (2.0 if isRunnig else 1.2)
-
-		var bob_strength = 0.05 if isRunnig else 0.03
-
-		camera.position.y = base_cam_pos.y + sin(bob_time * 8.0) * bob_strength
-		camera.position.x = base_cam_pos.x + cos(bob_time * 4.0) * bob_strength * 0.5
-	else:
-		bob_time = 0.0
-		camera.position = camera.position.lerp(base_cam_pos, 0.1)
-	move_and_slide()
-"
+[ext_resource type="Script" uid="uid://dshnwkdv0qio1" path="res://script/player.gd" id="1_3vyb7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g2els"]
-radius = 0.24853516
-height = 1.6313477
+radius = 0.2368164
+height = 1.6089478
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lj8y3"]
 resource_name = "Beta_Joints_MAT1"
@@ -3532,11 +3448,10 @@ _data = {
 [node name="Player" type="CharacterBody3D"]
 floor_max_angle = 1.74882
 floor_snap_length = 1.5
-script = SubResource("GDScript_3vyb7")
-SENSE = 0.1
+script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9877712, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7941982, 0)
 shape = SubResource("CapsuleShape3D_g2els")
 
 [node name="visuals" type="Node3D" parent="."]
@@ -4019,11 +3934,11 @@ libraries = {
 playback_default_blend_time = 0.2
 
 [node name="camera_mount" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5398853, -0.4375332)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5398853, 0)
 metadata/_edit_group_ = true
 
 [node name="Camera3D" type="Camera3D" parent="camera_mount"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.16869223)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0)
 
 [node name="EyesCast" type="RayCast3D" parent="camera_mount"]
 unique_name_in_owner = true
@@ -4047,4 +3962,4 @@ grow_vertical = 2
 [node name="KeyText" type="Label" parent="CanvasLayer/BoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Press \"E\" to intreact with this item"
+text = "Press \"E\" to interact with this item"

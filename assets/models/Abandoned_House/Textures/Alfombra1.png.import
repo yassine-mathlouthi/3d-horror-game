@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blf7u6seupune"
-path.s3tc="res://.godot/imported/Alfombra1.png-b1231297dd8cf0502c61367209e9e36d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Alfombra1.png-3c3f710ee0809a72ca5ef0f88125b461.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Alfombra1.png"
-dest_files=["res://.godot/imported/Alfombra1.png-b1231297dd8cf0502c61367209e9e36d.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Alfombra1.png"
+dest_files=["res://.godot/imported/Alfombra1.png-3c3f710ee0809a72ca5ef0f88125b461.s3tc.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://ddwjxf64t3pca"]
+[gd_scene load_steps=14 format=3 uid="uid://ddwjxf64t3pca"]
 
 [ext_resource type="Texture2D" uid="uid://pr2go6uq60pl" path="res://assets/sky/mud_road_puresky_4k.exr" id="1_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dupkice01xnrn" path="res://assets/cgshare-book-ground-floor-001.jpg" id="1_k0juu"]
@@ -28,6 +28,12 @@ fog_sky_affect = 0.753
 albedo_texture = ExtResource("1_k0juu")
 uv1_triplanar = true
 
+[sub_resource type="BoxMesh" id="BoxMesh_floor"]
+size = Vector3(500, 1, 500)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_floor"]
+size = Vector3(500, 1, 500)
+
 [node name="world" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -38,15 +44,19 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 light_color = Color(0.1584723, 0.15847233, 0.1584723, 1)
 light_energy = 0.5
 light_bake_mode = 1
-shadow_enabled = true
+shadow_enabled = false
 
 [node name="map" type="Node3D" parent="."]
 
-[node name="floor" type="CSGBox3D" parent="map"]
+[node name="floor" type="MeshInstance3D" parent="map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.572571, -0.47882593, 4.029602)
 material_override = SubResource("StandardMaterial3D_e3hyu")
-use_collision = true
-size = Vector3(500, 1, 500)
+mesh = SubResource("BoxMesh_floor")
+
+[node name="FloorCollision" type="StaticBody3D" parent="map/floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="map/floor/FloorCollision"]
+shape = SubResource("BoxShape3D_floor")
 
 [node name="Player" parent="." instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.730128, 2.5242803, -13.752009)

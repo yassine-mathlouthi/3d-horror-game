@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beu6strtn1k5n"
-path.s3tc="res://.godot/imported/Barril.jpg-5f430e3bda412673fc68afbabcf0147f.s3tc.ctex"
+path.s3tc="res://.godot/imported/Barril.jpg-f6be10cd9f9a88aff49756c75e48a846.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Barril.jpg"
-dest_files=["res://.godot/imported/Barril.jpg-5f430e3bda412673fc68afbabcf0147f.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Barril.jpg"
+dest_files=["res://.godot/imported/Barril.jpg-f6be10cd9f9a88aff49756c75e48a846.s3tc.ctex"]
 
 [params]
 
