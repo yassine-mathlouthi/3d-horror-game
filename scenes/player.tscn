@@ -3942,28 +3942,38 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0)
 
 [node name="Flashlight" type="SpotLight3D" parent="camera_mount/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0118174255)
-light_color = Color(1, 0.86, 0.62, 1)
-light_energy = 2.4
+light_color = Color(1, 0.88, 0.68, 1)
+light_energy = 1.85
 light_cull_mask = 1048573
-shadow_enabled = false
-spot_range = 18.0
-spot_attenuation = 0.9
-spot_angle = 62.0
-spot_angle_attenuation = 0.75
+spot_range = 23.0
+spot_attenuation = 1.2
+spot_angle = 28.0
 
 [node name="FlashlightFill" type="OmniLight3D" parent="camera_mount/Camera3D"]
-light_color = Color(0.68, 0.76, 0.9, 1)
-light_energy = 0.22
+visible = false
+light_color = Color(0.45, 0.55, 0.75, 1)
+light_energy = 0.38
 light_cull_mask = 1048573
-omni_range = 7.0
-omni_attenuation = 2.2
-shadow_enabled = false
+omni_range = 8.5
+omni_attenuation = 2.0
 
 [node name="EyesCast" type="RayCast3D" parent="camera_mount"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.38417834)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.041791767)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="FpsLabel" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 130.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0.82, 1, 0.64, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "FPS: --"
 
 [node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
 anchors_preset = 8

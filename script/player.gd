@@ -7,12 +7,15 @@ const MIN_LOOK_ANGLE := deg_to_rad(-60.0)
 const MAX_LOOK_ANGLE := deg_to_rad(70.0)
 const FIRST_PERSON_HIDDEN_LAYER := 2
 const INTERACTION_DISTANCE := 3.0
+@onready var flashlight_fill: OmniLight3D = $camera_mount/Camera3D/FlashlightFill
+@onready var flashlight: SpotLight3D = $camera_mount/Camera3D/Flashlight
 
 @export var sensitivity := 0.12
-
+@export var FLASH_BY_DEFAULT : bool = false
 @onready var camera_mount: Node3D = $camera_mount
 @onready var camera: Camera3D = $camera_mount/Camera3D
 @onready var key_text: Label = $CanvasLayer/BoxContainer/KeyText
+@onready var fps_label: Label = $CanvasLayer/FpsLabel
 @onready var animation_player: AnimationPlayer = $visuals/mixamo_base/AnimationPlayer
 @onready var visuals: Node3D = $visuals
 
@@ -27,6 +30,7 @@ func _ready() -> void:
 	base_camera_position = camera_mount.position
 	camera.near = 0.05
 	camera.cull_mask &= ~FIRST_PERSON_HIDDEN_LAYER
+	_set_flashlight_visible(FLASH_BY_DEFAULT)
 	_hide_from_first_person_camera(visuals)
 	key_text.hide()
 
@@ -40,6 +44,10 @@ func _input(event: InputEvent) -> void:
 		camera_mount.rotation.x = look_pitch
 
 
+func _process(_delta: float) -> void:
+	fps_label.text = "FPS: %d" % Engine.get_frames_per_second()
+
+
 func _physics_process(delta: float) -> void:
 	_handle_interaction()
 
@@ -51,7 +59,12 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-
+		
+	# flash light logique 
+	if Input.is_action_just_pressed("flash"):
+		FLASH_BY_DEFAULT = !FLASH_BY_DEFAULT
+		_set_flashlight_visible(FLASH_BY_DEFAULT)
+		
 	var input_dir := Input.get_vector("right", "left", "forward", "back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -124,3 +137,8 @@ func _hide_from_first_person_camera(node: Node) -> void:
 
 	for child in node.get_children():
 		_hide_from_first_person_camera(child)
+
+
+func _set_flashlight_visible(is_visible: bool) -> void:
+	flashlight.visible = is_visible
+	flashlight_fill.visible = is_visible
