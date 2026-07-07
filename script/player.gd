@@ -45,10 +45,11 @@ func _input(event: InputEvent) -> void:
 
 
 func _process(_delta: float) -> void:
-	fps_label.text = "FPS: %d" % Engine.get_frames_per_second()
+	pass
 
 
 func _physics_process(delta: float) -> void:
+	fps_label.text = "FPS: %d" % Engine.get_frames_per_second()
 	_handle_interaction()
 
 	is_running = Input.is_action_pressed("run")
