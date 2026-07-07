@@ -1,0 +1,94 @@
+name: Bump Version
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version part to increase
+        required: true
+        default: patch
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  bump-version:
+    name: Bump project version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update version files
+        id: version
+        shell: pwsh
+        run: |
+          $projectPath = "project.godot"
+          $readmePath = "README.md"
+
+          $project = Get-Content -Path $projectPath -Raw
+          if ($project -notmatch 'config/version="(?<version>\d+\.\d+\.\d+)"') {
+            throw "Could not find config/version in project.godot."
+          }
+
+          $parts = $Matches.version.Split('.') | ForEach-Object { [int]$_ }
+          $major = $parts[0]
+          $minor = $parts[1]
+          $patch = $parts[2]
+
+          switch ("${{ inputs.bump }}") {
+            "major" {
+              $major++
+              $minor = 0
+              $patch = 0
+            }
+            "minor" {
+              $minor++
+              $patch = 0
+            }
+            "patch" {
+              $patch++
+            }
+            default {
+              throw "Unknown bump type: ${{ inputs.bump }}"
+            }
+          }
+
+          $newVersion = "$major.$minor.$patch"
+          $tag = "v$newVersion"
+
+          git fetch --tags
+          if ((git tag --list $tag)) {
+            throw "Tag $tag already exists."
+          }
+
+          $project = $project -replace 'config/version="\d+\.\d+\.\d+"', "config/version=`"$newVersion`""
+          Set-Content -Path $projectPath -Value $project -NoNewline
+
+          if (Test-Path -Path $readmePath) {
+            $readme = Get-Content -Path $readmePath -Raw
+            $readme = $readme -replace 'Version-v\d+\.\d+\.\d+-', "Version-v$newVersion-"
+            $readme = $readme -replace '\| Project version \| v\d+\.\d+\.\d+ \|', "| Project version | v$newVersion |"
+            Set-Content -Path $readmePath -Value $readme -NoNewline
+          }
+
+          "version=$newVersion" >> $env:GITHUB_OUTPUT
+          "tag=$tag" >> $env:GITHUB_OUTPUT
+
+      - name: Commit and tag version
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add project.godot README.md
+          git commit -m "CI: bump version to ${{ steps.version.outputs.version }}"
+          git tag "${{ steps.version.outputs.tag }}"
+          git push origin "HEAD:${{ github.ref_name }}"
+          git push origin "${{ steps.version.outputs.tag }}"

@@ -70,7 +70,6 @@
 resource_name = "Madera4.001"
 albedo_texture = ExtResource("1_o1lng")
 rim_enabled = true
-disable_receive_shadows = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mkygo"]
 _surfaces = [{
@@ -110,9 +109,7 @@ data = PackedVector3Array(0.0916, 0.055299997, 0, 0.0916, 0.0656, 0, 0.0936, 0.0
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7eor"]
 resource_name = "Telaraña"
 transparency = 4
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("2_u3cm2")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_02tfb"]
 _surfaces = [{
@@ -2260,9 +2257,7 @@ shadow_mesh = SubResource("ArrayMesh_nb1vx")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6pqa"]
 resource_name = "Tela1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("3_4sf0x")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_6bss6"]
 _surfaces = [{
@@ -2303,9 +2298,7 @@ points = PackedVector3Array(-0.060004182, -0.025818245, -0.024130626, -0.0600041
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_syjlv"]
 resource_name = "Madera1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("4_t2htm")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_i4abd"]
 _surfaces = [{
@@ -2442,9 +2435,7 @@ points = PackedVector3Array(-0.02598789, -0.024207015, -0.024080176, -0.02598789
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rq3h1"]
 resource_name = "Material.002"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("5_2bi2r")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tn45y"]
 _surfaces = [{
@@ -2773,9 +2764,7 @@ points = PackedVector3Array(-0.02598789, -0.024207015, -0.024080176, -0.02598789
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mpoef"]
 resource_name = "Madera2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("6_riwtg")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_5yvv3"]
 _surfaces = [{
@@ -3734,9 +3723,7 @@ shadow_mesh = SubResource("ArrayMesh_1cjq7")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3n67"]
 resource_name = "Planta5"
 transparency = 4
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("7_4ed1d")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_68st3"]
 _surfaces = [{
@@ -4223,9 +4210,7 @@ points = PackedVector3Array(0.003216312, 0.004460246, 0.002043278, 0.0033610722,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1np5p"]
 resource_name = "Vidrio"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("8_bslbo")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ln5mm"]
 _surfaces = [{
@@ -4320,9 +4305,7 @@ points = PackedVector3Array(0.003216312, 0.004460246, 0.002043278, 0.0033610722,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lucnm"]
 resource_name = "Cuar2.001"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("9_rcmtk")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_yael3"]
 _surfaces = [{
@@ -4453,15 +4436,11 @@ points = PackedVector3Array(0.003216312, 0.004460246, 0.002043278, 0.0033610722,
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4u5t"]
 resource_name = "Metal2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("10_10yu3")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pqi7a"]
 resource_name = "Mesa_T"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("11_p332e")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_106uv"]
 _surfaces = [{
@@ -4522,9 +4501,7 @@ points = PackedVector3Array(0.0074611213, 0.0053664576, 0.00024875766, -0.007461
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fjc2"]
 resource_name = "Material.022"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("12_p7fef")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_rfc15"]
 _surfaces = [{
@@ -4842,8 +4819,6 @@ points = PackedVector3Array(0.002447699, 0.026822839, 0.014979485, 0.002447699, 
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vyewo"]
 resource_name = "Lampara1"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7eurc"]
 _surfaces = [{
@@ -4915,14 +4890,10 @@ shadow_mesh = SubResource("ArrayMesh_p4q47")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kaoso"]
 resource_name = "Lampara2"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kpvtx"]
 resource_name = "Foco"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("13_6rsua")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pw1ii"]
 _surfaces = [{
@@ -5564,8 +5535,6 @@ shadow_mesh = SubResource("ArrayMesh_m2gyl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_35e1k"]
 resource_name = "Lampara3.001"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ighkm"]
 _surfaces = [{
@@ -5873,15 +5842,11 @@ shadow_mesh = SubResource("ArrayMesh_ubfiy")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfwok"]
 resource_name = "Metal1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("14_jjca2")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58m1p"]
 resource_name = "Madera8"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("15_ugr7l")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_c0i2e"]
 _surfaces = [{
@@ -7127,9 +7092,7 @@ shadow_mesh = SubResource("ArrayMesh_d7e6x")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jlb5r"]
 resource_name = "Madera3"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("16_a0h64")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_mubyf"]
 _surfaces = [{
@@ -9557,9 +9520,7 @@ shadow_mesh = SubResource("ArrayMesh_e0vrd")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uyjbm"]
 resource_name = "Metal3"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("17_u2yxv")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bjkev"]
 _surfaces = [{
@@ -10227,9 +10188,7 @@ shadow_mesh = SubResource("ArrayMesh_ra6e6")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vnmbd"]
 resource_name = "Tele2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("18_ebkhd")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hj2go"]
 _surfaces = [{
@@ -10265,9 +10224,7 @@ shadow_mesh = SubResource("ArrayMesh_hj2go")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qq55g"]
 resource_name = "Tele1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("19_bgoms")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pwejd"]
 _surfaces = [{
@@ -11340,8 +11297,6 @@ points = PackedVector3Array(-0.0060048187, -0.0010867842, -0.005946444, -0.00600
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_05t5y"]
 resource_name = "Cuadros"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_plm1p"]
 _surfaces = [{
@@ -11885,9 +11840,7 @@ shadow_mesh = SubResource("ArrayMesh_wstnd")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwqvr"]
 resource_name = "Carton"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("20_qr8fa")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_n058t"]
 _surfaces = [{
@@ -12938,8 +12891,6 @@ points = PackedVector3Array(-0.11991873, -0.013500478, -0.031068932, -0.11991873
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_42agh"]
 resource_name = "Refrigerador"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_03ah3"]
 _surfaces = [{
@@ -13013,9 +12964,7 @@ points = PackedVector3Array(0.015258532, -0.022617146, 0.043452933, -0.016164871
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8dnk"]
 resource_name = "Basura"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("21_ovkp1")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_nfbjh"]
 _surfaces = [{
@@ -14253,9 +14202,7 @@ shadow_mesh = SubResource("ArrayMesh_3j56x")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_imacq"]
 resource_name = "Material"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("22_qgg8y")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lcxp0"]
 _surfaces = [{
@@ -14481,7 +14428,6 @@ points = PackedVector3Array(0.009749279, -0.0022252994, 0.01, 0.007817746, 0.006
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5rjkk"]
 resource_name = "Tela2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("23_fx4a7")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lf3e4"]
@@ -14520,9 +14466,7 @@ shadow_mesh = SubResource("ArrayMesh_lf3e4")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_torn2"]
 resource_name = "Tela3"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("24_jvg7s")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_f1elp"]
 _surfaces = [{
@@ -15353,9 +15297,7 @@ points = PackedVector3Array(0.34885788, 0.7824342, 0.09430432, 0.7824342, 0.3488
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xvbdh"]
 resource_name = "Monitores"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("26_et5lf")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_j87vs"]
 _surfaces = [{
@@ -15425,9 +15367,7 @@ shadow_mesh = SubResource("ArrayMesh_1hjxo")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m88yt"]
 resource_name = "Pantalla"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0.035934944, 0.9063318, 0, 1)
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_m8n3f"]
 _surfaces = [{
@@ -16060,9 +16000,7 @@ shadow_mesh = SubResource("ArrayMesh_in58r")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f8vlk"]
 resource_name = "Pizarra"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("27_pnx6u")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_7v1mv"]
 _surfaces = [{
@@ -16360,9 +16298,7 @@ shadow_mesh = SubResource("ArrayMesh_p510w")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q0kju"]
 resource_name = "Tela4"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("28_37a36")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_qqoox"]
 _surfaces = [{
@@ -16532,9 +16468,7 @@ shadow_mesh = SubResource("ArrayMesh_ftbdn")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1y32m"]
 resource_name = "Lavadora"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("29_j30ov")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_pf3l2"]
 _surfaces = [{
@@ -16711,9 +16645,7 @@ points = PackedVector3Array(0.004031902, -0.0019389351, -0.008929277, 0.00403190
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7b46j"]
 resource_name = "Vidrio.001"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_3krxa"]
 _surfaces = [{
@@ -16945,9 +16877,7 @@ points = PackedVector3Array(-0.0075088646, -0.004199715, -0.00028394122, -0.0070
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t1suk"]
 resource_name = "Retrete"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("30_xg46o")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ifbw7"]
 _surfaces = [{
@@ -17221,9 +17151,7 @@ shadow_mesh = SubResource("ArrayMesh_lpfvm")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dsx7x"]
 resource_name = "Bañera"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("31_hq4uo")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_x2na0"]
 _surfaces = [{
@@ -17301,15 +17229,11 @@ points = PackedVector3Array(-0.0076846136, -0.008037338, 0.004271635, -0.0063814
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jdmgq"]
 resource_name = "P1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("32_t76ej")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q2fkk"]
 resource_name = "P2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("33_0kwfk")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lea4e"]
 _surfaces = [{
@@ -17429,9 +17353,7 @@ shadow_mesh = SubResource("ArrayMesh_434pi")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ts543"]
 resource_name = "Tela5"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("34_6u2vf")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_er0gm"]
 _surfaces = [{
@@ -17703,9 +17625,7 @@ shadow_mesh = SubResource("ArrayMesh_4j1p5")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ct3ul"]
 resource_name = "Carpet_02"
 transparency = 4
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("35_38ymq")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_1m5c8"]
 _surfaces = [{
@@ -17774,9 +17694,7 @@ shadow_mesh = SubResource("ArrayMesh_q8u0e")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iridw"]
 resource_name = "Carpet_01"
 transparency = 4
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("36_13orv")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_05k22"]
 _surfaces = [{
@@ -17883,9 +17801,7 @@ roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pub81"]
 resource_name = "Madera4"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("1_o1lng")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gshsc"]
 resource_name = "Pared"
@@ -17910,9 +17826,7 @@ roughness = 0.65
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ed66s"]
 resource_name = "Madera5"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("41_myfdh")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x6hbv"]
 resource_name = "Techo"
@@ -18447,9 +18361,7 @@ shadow_mesh = SubResource("ArrayMesh_8aj24")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4418l"]
 resource_name = "Pasto2"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("47_c64eq")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_apnsp"]
 _surfaces = [{
@@ -18593,9 +18505,7 @@ points = PackedVector3Array(-0.0019794004, 0.0036103092, 0.011015722, 0.00480550
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wr2ji"]
 resource_name = "Madera6"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("48_6ms41")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_cmkdj"]
 _surfaces = [{
@@ -18666,9 +18576,7 @@ shadow_mesh = SubResource("ArrayMesh_i3ovk")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tvax"]
 resource_name = "Cables"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("49_jv8o2")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_syopp"]
 _surfaces = [{
@@ -18704,9 +18612,7 @@ shadow_mesh = SubResource("ArrayMesh_syopp")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dx74"]
 resource_name = "Cajadefusiles"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("50_1bbmu")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hsgg7"]
 _surfaces = [{
@@ -18906,9 +18812,7 @@ shadow_mesh = SubResource("ArrayMesh_a4ck6")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wkkqj"]
 resource_name = "Madera7"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("51_g8efj")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_730uw"]
 _surfaces = [{
@@ -19172,9 +19076,7 @@ shadow_mesh = SubResource("ArrayMesh_qo5kc")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fuopy"]
 resource_name = "Colchon"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("52_a28bk")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_vtlmw"]
 _surfaces = [{
@@ -19401,9 +19303,7 @@ shadow_mesh = SubResource("ArrayMesh_htad2")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qbjpe"]
 resource_name = "Material.014"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0.21332435, 0.21332435, 0.21332435, 1)
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_g31vr"]
 _surfaces = [{
@@ -19483,9 +19383,7 @@ shadow_mesh = SubResource("ArrayMesh_g31vr")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j1vc5"]
 resource_name = "Fusil"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("53_xtkye")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_e8er6"]
 _surfaces = [{
@@ -20243,9 +20141,7 @@ shadow_mesh = SubResource("ArrayMesh_pf24w")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ue8tb"]
 resource_name = "P"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("54_hrbjy")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_h70bt"]
 _surfaces = [{
@@ -20382,9 +20278,7 @@ shadow_mesh = SubResource("ArrayMesh_nnlk3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfdxm"]
 resource_name = "Puerta"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("55_tv48v")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_crk5d"]
 _surfaces = [{
@@ -22325,9 +22219,7 @@ shadow_mesh = SubResource("ArrayMesh_3e0wh")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2lni"]
 resource_name = "Telefono"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("56_gbjkp")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tjdm4"]
 _surfaces = [{
@@ -22440,9 +22332,7 @@ shadow_mesh = SubResource("ArrayMesh_yqv20")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txh32"]
 resource_name = "Arbol1"
 transparency = 4
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("57_60xu1")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lo4lq"]
 _surfaces = [{
@@ -22480,9 +22370,7 @@ shadow_mesh = SubResource("ArrayMesh_lo4lq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4lbku"]
 resource_name = "Pasto1"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("58_5745m")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_lg6im"]
 _surfaces = [{
@@ -22576,15 +22464,11 @@ shadow_mesh = SubResource("ArrayMesh_uhwxq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jipne"]
 resource_name = "Road"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("59_td02f")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uisge"]
 resource_name = "Banqueta"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("60_hgp27")
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_4x6yv"]
 _surfaces = [{
@@ -22917,9 +22801,7 @@ shadow_mesh = SubResource("ArrayMesh_8om3a")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58shy"]
 resource_name = "Emisor"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0.9063318, 0.7012524, 0.08601394, 1)
-emission_enabled = false
 emission = Color(0.9058824, 0.7019609, 0.086274534, 1)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tocdw"]
@@ -23106,21 +22988,15 @@ data = PackedVector3Array(0.0359, 0.035099998, 0, 0.0359, -0.035099998, 0, -0.03
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njsjp"]
 resource_name = "Metal4"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("63_sbuks")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atcpa"]
 resource_name = "Cuero"
-vertex_color_use_as_albedo = false
 albedo_texture = ExtResource("64_nnlgk")
-emission_enabled = false
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irkqu"]
 resource_name = "Espejo"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bq8c1"]
 _surfaces = [{
@@ -24069,9 +23945,7 @@ shadow_mesh = SubResource("ArrayMesh_7l8hl")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x4v2h"]
 resource_name = "White"
-vertex_color_use_as_albedo = false
 albedo_color = Color(0, 0, 0, 1)
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ie626"]
 _surfaces = [{
@@ -24107,8 +23981,6 @@ shadow_mesh = SubResource("ArrayMesh_ie626")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86f04"]
 resource_name = "Radio"
-vertex_color_use_as_albedo = false
-emission_enabled = false
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_ytxvr"]
 _surfaces = [{
@@ -26122,11 +25994,10 @@ transform = Transform3D(6.978677e-08, -1.1708277, -3.4893386e-08, 3.4893386e-08,
 mesh = SubResource("ArrayMesh_ar06p")
 skeleton = NodePath("")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara2_009"]
-transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 1.8528846e-22, 0.028860392, 0.000582587, 0, -0.008863449)
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lamparas/Lampara2_009"]
+transform = Transform3D(0.028860392, 8.601076e-10, 8.60107e-10, -4.7821193e-16, 0.028860388, -8.601066e-10, -4.440892e-16, 1.9852335e-22, 0.028860392, -0.0008398928, 0, -0.008283615)
 light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
-omni_range = 13.177
-omni_attenuation = 0.085
+omni_attenuation = 0.5
 
 [node name="Lampara2_015" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(-4.6162747e-08, 1.1445414, -0.24670582, 2.566083e-07, -0.24670593, -1.1445403, -1.1708277, -6.430303e-08, -2.0622664e-07, -0.092372656, 0.013749599, -0.20545664)

@@ -62,6 +62,18 @@ The project focuses on first-person exploration, item interaction, mobile contro
 
 ---
 
+## Versioning
+
+Versions use `major.minor.patch`, for example `v0.1.0`.
+
+- Use `patch` for bug fixes: `v0.1.0` to `v0.1.1`.
+- Use `minor` for new features: `v0.1.1` to `v0.2.0`.
+- Use `major` for big stable releases: `v0.9.0` to `v1.0.0`.
+
+To bump the version on GitHub, run the **Bump Version** workflow from the repository's **Actions** tab and choose `patch`, `minor`, or `major`. The workflow updates `project.godot`, updates this README, commits the change, and creates a matching Git tag.
+
+---
+
 ## Built With
 
 | Technology | Purpose |
