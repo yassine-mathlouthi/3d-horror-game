@@ -2,10 +2,12 @@ extends Node3D
 
 @export var mesh_visibility_range := 90.0
 @export var mesh_visibility_margin := 10.0
-@export var practical_light_energy := 0.9
-@export var practical_light_range := 9.0
-@export var key_practical_shadow_count := 6
+@export var practical_light_energy := 0.75
+@export var practical_light_range := 6.0
+@export var max_practical_lights := 14
+@export var key_practical_shadow_count := 0
 
+var _practical_lights_enabled := 0
 var _shadow_casters_enabled := 0
 
 
@@ -52,9 +54,15 @@ func _fix_room_surface_materials(mesh_instance: MeshInstance3D) -> void:
 
 
 func _tune_practical_light(light: Light3D) -> void:
+	if _practical_lights_enabled >= max_practical_lights:
+		light.visible = false
+		return
+
+	_practical_lights_enabled += 1
+	light.visible = true
 	light.light_color = Color(1.0, 0.72, 0.38)
 	light.light_energy = practical_light_energy
-	light.light_indirect_energy = 0.35
+	light.light_indirect_energy = 0.2
 	light.shadow_enabled = _shadow_casters_enabled < key_practical_shadow_count
 	if light.shadow_enabled:
 		_shadow_casters_enabled += 1

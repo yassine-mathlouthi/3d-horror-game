@@ -3945,7 +3945,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0118174255)
 light_color = Color(1, 0.88, 0.68, 1)
 light_energy = 1.85
 light_cull_mask = 1048573
-shadow_enabled = true
 spot_range = 23.0
 spot_attenuation = 1.2
 spot_angle = 28.0
@@ -3963,6 +3962,18 @@ unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0.041791767)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="FpsLabel" type="Label" parent="CanvasLayer"]
+unique_name_in_owner = true
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 130.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0.82, 1, 0.64, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+text = "FPS: --"
 
 [node name="BoxContainer" type="BoxContainer" parent="CanvasLayer"]
 anchors_preset = 8

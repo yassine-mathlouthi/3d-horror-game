@@ -15,6 +15,7 @@ const INTERACTION_DISTANCE := 3.0
 @onready var camera_mount: Node3D = $camera_mount
 @onready var camera: Camera3D = $camera_mount/Camera3D
 @onready var key_text: Label = $CanvasLayer/BoxContainer/KeyText
+@onready var fps_label: Label = $CanvasLayer/FpsLabel
 @onready var animation_player: AnimationPlayer = $visuals/mixamo_base/AnimationPlayer
 @onready var visuals: Node3D = $visuals
 
@@ -41,6 +42,10 @@ func _input(event: InputEvent) -> void:
 		visuals.rotate_y(deg_to_rad(look_delta.x))
 		look_pitch = clamp(look_pitch + deg_to_rad(-look_delta.y), MIN_LOOK_ANGLE, MAX_LOOK_ANGLE)
 		camera_mount.rotation.x = look_pitch
+
+
+func _process(_delta: float) -> void:
+	fps_label.text = "FPS: %d" % Engine.get_frames_per_second()
 
 
 func _physics_process(delta: float) -> void:
