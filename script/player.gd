@@ -29,6 +29,7 @@ func _ready() -> void:
 	base_camera_position = camera_mount.position
 	camera.near = 0.05
 	camera.cull_mask &= ~FIRST_PERSON_HIDDEN_LAYER
+	_set_flashlight_visible(FLASH_BY_DEFAULT)
 	_hide_from_first_person_camera(visuals)
 	key_text.hide()
 
@@ -56,12 +57,8 @@ func _physics_process(delta: float) -> void:
 		
 	# flash light logique 
 	if Input.is_action_just_pressed("flash"):
-		if FLASH_BY_DEFAULT:
-			flashlight.hide()
-			FLASH_BY_DEFAULT=!FLASH_BY_DEFAULT
-		else:
-			flashlight.show()
-			FLASH_BY_DEFAULT=!FLASH_BY_DEFAULT
+		FLASH_BY_DEFAULT = !FLASH_BY_DEFAULT
+		_set_flashlight_visible(FLASH_BY_DEFAULT)
 		
 	var input_dir := Input.get_vector("right", "left", "forward", "back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
@@ -135,3 +132,8 @@ func _hide_from_first_person_camera(node: Node) -> void:
 
 	for child in node.get_children():
 		_hide_from_first_person_camera(child)
+
+
+func _set_flashlight_visible(is_visible: bool) -> void:
+	flashlight.visible = is_visible
+	flashlight_fill.visible = is_visible
