@@ -53,14 +53,14 @@ shadow_enabled = true
 directional_shadow_max_distance = 55.0
 
 [node name="HouseExteriorWarmFill" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.0, 7.0, 84.0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 7, 84)
 light_color = Color(1, 0.62, 0.28, 1)
 light_energy = 1.1
 omni_range = 34.0
 omni_attenuation = 1.45
 
 [node name="RoadBlueFill" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.0, 5.5, -34.0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5.5, -34)
 light_color = Color(0.34, 0.45, 0.68, 1)
 light_energy = 0.24
 omni_range = 26.0

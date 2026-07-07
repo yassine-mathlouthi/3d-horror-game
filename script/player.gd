@@ -43,11 +43,6 @@ func _input(event: InputEvent) -> void:
 		look_pitch = clamp(look_pitch + deg_to_rad(-look_delta.y), MIN_LOOK_ANGLE, MAX_LOOK_ANGLE)
 		camera_mount.rotation.x = look_pitch
 
-
-func _process(_delta: float) -> void:
-	pass
-
-
 func _physics_process(delta: float) -> void:
 	fps_label.text = "FPS: %d" % Engine.get_frames_per_second()
 	_handle_interaction()
