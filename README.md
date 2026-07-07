@@ -70,7 +70,7 @@ Versions use `major.minor.patch`, for example `v0.1.0`.
 - Use `minor` for new features: `v0.1.1` to `v0.2.0`.
 - Use `major` for big stable releases: `v0.9.0` to `v1.0.0`.
 
-To bump the version on GitHub, run the **Bump Version** workflow from the repository's **Actions** tab and choose `patch`, `minor`, or `major`. The workflow updates `project.godot`, updates this README, commits the change, and creates a matching Git tag.
+When changes are pushed to `main`, the **Bump Version** workflow automatically increases the patch version and creates a bot commit like `[code] CI: bump version to 0.1.1`. You can also run the workflow manually from the repository's **Actions** tab and choose `patch`, `minor`, or `major`.
 
 ---
 

@@ -1,6 +1,9 @@
 name: Bump Version
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       bump:
@@ -17,6 +20,7 @@ jobs:
   bump-version:
     name: Bump project version
     runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
     permissions:
       contents: write
 
@@ -32,6 +36,10 @@ jobs:
         run: |
           $projectPath = "project.godot"
           $readmePath = "README.md"
+          $bumpType = "${{ github.event.inputs.bump }}"
+          if ([string]::IsNullOrWhiteSpace($bumpType)) {
+            $bumpType = "patch"
+          }
 
           $project = Get-Content -Path $projectPath -Raw
           if ($project -notmatch 'config/version="(?<version>\d+\.\d+\.\d+)"') {
@@ -43,7 +51,7 @@ jobs:
           $minor = $parts[1]
           $patch = $parts[2]
 
-          switch ("${{ inputs.bump }}") {
+          switch ($bumpType) {
             "major" {
               $major++
               $minor = 0
@@ -57,17 +65,11 @@ jobs:
               $patch++
             }
             default {
-              throw "Unknown bump type: ${{ inputs.bump }}"
+              throw "Unknown bump type: $bumpType"
             }
           }
 
           $newVersion = "$major.$minor.$patch"
-          $tag = "v$newVersion"
-
-          git fetch --tags
-          if ((git tag --list $tag)) {
-            throw "Tag $tag already exists."
-          }
 
           $project = $project -replace 'config/version="\d+\.\d+\.\d+"', "config/version=`"$newVersion`""
           Set-Content -Path $projectPath -Value $project -NoNewline
@@ -80,15 +82,12 @@ jobs:
           }
 
           "version=$newVersion" >> $env:GITHUB_OUTPUT
-          "tag=$tag" >> $env:GITHUB_OUTPUT
 
-      - name: Commit and tag version
+      - name: Commit version bump
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add project.godot README.md
-          git commit -m "CI: bump version to ${{ steps.version.outputs.version }}"
-          git tag "${{ steps.version.outputs.tag }}"
+          git commit -m "[code] CI: bump version to ${{ steps.version.outputs.version }}"
           git push origin "HEAD:${{ github.ref_name }}"
-          git push origin "${{ steps.version.outputs.tag }}"
