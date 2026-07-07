@@ -3943,14 +3943,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03933549, 0)
 [node name="Flashlight" type="SpotLight3D" parent="camera_mount/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0118174255)
 light_color = Color(1, 0.86, 0.62, 1)
-light_energy = 2.4
 light_cull_mask = 1048573
-spot_range = 18.0
-spot_attenuation = 0.9
-spot_angle = 15.29538
-spot_angle_attenuation = 0.75
+spot_range = 15.0
+spot_angle = 21.117418
 
 [node name="FlashlightFill" type="OmniLight3D" parent="camera_mount/Camera3D"]
+visible = false
 light_color = Color(0.68, 0.76, 0.9, 1)
 light_energy = 0.22
 light_cull_mask = 1048573

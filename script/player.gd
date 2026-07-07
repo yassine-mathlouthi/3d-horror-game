@@ -7,9 +7,11 @@ const MIN_LOOK_ANGLE := deg_to_rad(-60.0)
 const MAX_LOOK_ANGLE := deg_to_rad(70.0)
 const FIRST_PERSON_HIDDEN_LAYER := 2
 const INTERACTION_DISTANCE := 3.0
+@onready var flashlight_fill: OmniLight3D = $camera_mount/Camera3D/FlashlightFill
+@onready var flashlight: SpotLight3D = $camera_mount/Camera3D/Flashlight
 
 @export var sensitivity := 0.12
-
+@export var FLASH_BY_DEFAULT : bool = false
 @onready var camera_mount: Node3D = $camera_mount
 @onready var camera: Camera3D = $camera_mount/Camera3D
 @onready var key_text: Label = $CanvasLayer/BoxContainer/KeyText
@@ -51,7 +53,16 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
-
+		
+	# flash light logique 
+	if Input.is_action_just_pressed("flash"):
+		if FLASH_BY_DEFAULT:
+			flashlight.hide()
+			FLASH_BY_DEFAULT=!FLASH_BY_DEFAULT
+		else:
+			flashlight.show()
+			FLASH_BY_DEFAULT=!FLASH_BY_DEFAULT
+		
 	var input_dir := Input.get_vector("right", "left", "forward", "back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
