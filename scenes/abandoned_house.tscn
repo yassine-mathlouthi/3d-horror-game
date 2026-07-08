@@ -28762,7 +28762,7 @@ mesh = SubResource("ArrayMesh_0ghe3")
 skeleton = NodePath("")
 
 [node name="Plane_067" type="MeshInstance3D" parent="Vecindario"]
-transform = Transform3D(1.3076131, 0, 0, 0, 1.3076131, 0, 0, 0, 1.3076131, -1.7719713, 0.38780832, -0.029868923)
+transform = Transform3D(1.3076131, 0, 0, 0, 1.3076131, 0, 0, 0, 1.3076131, -1.7719713, 0.38780832, -0.01799805)
 mesh = SubResource("ArrayMesh_1b2vw")
 
 [node name="Area3D" type="Area3D" parent="Vecindario/Plane_067"]
