@@ -17,14 +17,23 @@ func _ready() -> void:
 
 func _optimize_scene(node: Node) -> void:
 	if node is MeshInstance3D:
-		node.visibility_range_end = mesh_visibility_range
-		node.visibility_range_end_margin = mesh_visibility_margin
-		_fix_room_surface_materials(node)
+		var mesh_instance := node as MeshInstance3D
+		if _uses_runtime_visibility_culling(mesh_instance):
+			mesh_instance.visibility_range_end = mesh_visibility_range
+			mesh_instance.visibility_range_end_margin = mesh_visibility_margin
+		else:
+			mesh_instance.visibility_range_end = 0.0
+			mesh_instance.visibility_range_end_margin = 0.0
+		_fix_room_surface_materials(mesh_instance)
 	elif node is Light3D:
 		_tune_practical_light(node)
 
 	for child in node.get_children():
 		_optimize_scene(child)
+
+
+func _uses_runtime_visibility_culling(mesh_instance: MeshInstance3D) -> bool:
+	return not String(mesh_instance.name).begins_with("Plane_")
 
 
 func _fix_room_surface_materials(mesh_instance: MeshInstance3D) -> void:
