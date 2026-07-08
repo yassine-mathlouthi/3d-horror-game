@@ -3945,7 +3945,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0118174255)
 light_color = Color(1, 0.88, 0.68, 1)
 light_energy = 1.85
 light_cull_mask = 1048573
-spot_range = 23.0
+spot_range = 15.0
 spot_attenuation = 1.2
 spot_angle = 28.0
 

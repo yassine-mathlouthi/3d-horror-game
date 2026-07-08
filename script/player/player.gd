@@ -135,6 +135,5 @@ func _hide_from_first_person_camera(node: Node) -> void:
 		_hide_from_first_person_camera(child)
 
 
-func _set_flashlight_visible(is_visible: bool) -> void:
-	flashlight.visible = is_visible
-	flashlight_fill.visible = is_visible
+func _set_flashlight_visible(visible: bool) -> void:
+	flashlight.visible = visible
