@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://c3hcwrq4gs03t"]
+[gd_scene load_steps=6 format=3 uid="uid://c3hcwrq4gs03t"]
 
-[ext_resource type="Script" path="res://script/item_list.gd" id="1_37alu"]
+[ext_resource type="Script" uid="uid://cdxegdb0bm2ik" path="res://script/inventory/item_list.gd" id="1_37alu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_overlay"]
 bg_color = Color(0, 0, 0, 0.42)
@@ -25,18 +25,6 @@ corner_radius_top_left = 7
 corner_radius_top_right = 7
 corner_radius_bottom_right = 7
 corner_radius_bottom_left = 7
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_empty"]
-bg_color = Color(0.07, 0.065, 0.055, 0.82)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0.24, 0.2, 0.15, 0.75)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
 
 [sub_resource type="LabelSettings" id="LabelSettings_title"]
 font_size = 22
@@ -114,7 +102,7 @@ theme_override_constants/v_separation = 12
 columns = 4
 
 [node name="Hint" type="Label" parent="Root/InventoryPanel/Margin/VBox"]
+modulate = Color(0.65, 0.58, 0.48, 1)
 layout_mode = 2
 text = "Press inventory key to close"
 horizontal_alignment = 1
-modulate = Color(0.65, 0.58, 0.48, 1)

@@ -64,7 +64,7 @@
 [ext_resource type="Texture2D" uid="uid://baldssk5rdvss" path="res://assets/models/Abandoned_House/Textures/Muro.jpg" id="62_7j7vi"]
 [ext_resource type="Texture2D" uid="uid://b2oe2eecdtu2d" path="res://assets/models/Abandoned_House/Textures/Metal4.jpg" id="63_sbuks"]
 [ext_resource type="Texture2D" uid="uid://dgtbnhnxjp1yl" path="res://assets/models/Abandoned_House/Textures/Cue.jpg" id="64_nnlgk"]
-[ext_resource type="Script" uid="uid://cyvhfclf7gngk" path="res://script/scene_runtime_optimizer.gd" id="65_optimizer"]
+[ext_resource type="Script" uid="uid://cyvhfclf7gngk" path="res://script/utilities/scene_runtime_optimizer.gd" id="65_optimizer"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vrlh4"]
 resource_name = "Madera4.001"

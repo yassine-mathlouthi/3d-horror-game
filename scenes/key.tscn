@@ -2,7 +2,7 @@
 
 [ext_resource type="ArrayMesh" uid="uid://dehkpncxajexu" path="res://assets/Key/21929_Key_v1.obj" id="1_px33k"]
 [ext_resource type="Texture2D" uid="uid://dupkice01xnrn" path="res://assets/textures/cgshare-book-ground-floor-001.jpg" id="2_wy8tx"]
-[ext_resource type="Script" uid="uid://3x5xp4gcelhq" path="res://script/key.gd" id="2_yk2u2"]
+[ext_resource type="Script" uid="uid://3x5xp4gcelhq" path="res://script/items/key.gd" id="2_yk2u2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_brs3p"]
 albedo_texture = ExtResource("2_wy8tx")
