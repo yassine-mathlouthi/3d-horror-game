@@ -1,7 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://ddwjxf64t3pca"]
+[gd_scene load_steps=10 format=3 uid="uid://ddwjxf64t3pca"]
 
 [ext_resource type="Texture2D" uid="uid://pr2go6uq60pl" path="res://assets/sky/mud_road_puresky_4k.exr" id="1_71j4m"]
-[ext_resource type="Texture2D" uid="uid://dupkice01xnrn" path="res://assets/cgshare-book-ground-floor-001.jpg" id="1_k0juu"]
 [ext_resource type="PackedScene" uid="uid://bxtj03lwijts6" path="res://scenes/player.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://du3r3t22vlk2s" path="res://scenes/key.tscn" id="6_i7141"]
 [ext_resource type="PackedScene" uid="uid://ca3fpngi8vwlk" path="res://scenes/touch_controllers.tscn" id="6_qfnet"]
@@ -28,17 +27,6 @@ fog_light_energy = 0.2
 fog_density = 0.0065
 fog_sky_affect = 0.38
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
-albedo_texture = ExtResource("1_k0juu")
-roughness = 0.72
-uv1_triplanar = true
-
-[sub_resource type="BoxMesh" id="BoxMesh_floor"]
-size = Vector3(500, 1, 500)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_floor"]
-size = Vector3(500, 1, 500)
-
 [node name="world" type="Node3D"]
 
 [node name="Environment" type="Node3D" parent="."]
@@ -57,31 +45,25 @@ directional_shadow_max_distance = 55.0
 [node name="map" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -93.71003, 0)
 
-[node name="floor" type="MeshInstance3D" parent="map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.572571, -0.47882593, 4.029602)
-material_override = SubResource("StandardMaterial3D_e3hyu")
-mesh = SubResource("BoxMesh_floor")
-
-[node name="FloorCollision" type="StaticBody3D" parent="map/floor"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="map/floor/FloorCollision"]
-shape = SubResource("BoxShape3D_floor")
+[node name="Abandoned_House" parent="map" instance=ExtResource("7_i7141")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.090534, 95.737045, 96.78203)
 
 [node name="Player" parent="." instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.730128, 2.5242803, -13.752009)
 
-[node name="Control" type="Control" parent="."]
+[node name="Items" type="Node3D" parent="."]
+
+[node name="Key_living_room" parent="Items" instance=ExtResource("6_i7141")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.85646, 2.7454152, -25.00177)
+
+[node name="Features" type="Node3D" parent="."]
+
+[node name="Inventory" parent="Features" instance=ExtResource("7_4mrxx")]
+
+[node name="Control" type="Control" parent="Features"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="TouchControllers" parent="Control" instance=ExtResource("6_qfnet")]
-
-[node name="Abandoned_House" parent="." instance=ExtResource("7_i7141")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.090534, 2.0270119, 96.78203)
-
-[node name="Key" parent="." instance=ExtResource("6_i7141")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.85646, 2.7454152, -25.00177)
-
-[node name="ItemList" parent="." instance=ExtResource("7_4mrxx")]
+[node name="TouchControllers" parent="Features/Control" instance=ExtResource("6_qfnet")]
