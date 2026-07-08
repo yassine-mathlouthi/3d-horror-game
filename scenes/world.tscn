@@ -93,6 +93,6 @@ offset_bottom = 40.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.20937, 2.027008, 96.60977)
 
 [node name="Key" parent="." instance=ExtResource("6_i7141")]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 10.997447, 2.9516892, -23.779478)
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.85646, 2.7454152, -25.00177)
 
 [node name="ItemList" parent="." instance=ExtResource("7_4mrxx")]
