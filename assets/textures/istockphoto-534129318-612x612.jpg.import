@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhyatx8rb6538"
-path.s3tc="res://.godot/imported/387359c5580f06c08c266126b3b46db47e48ba44.png-0614f16ee55b0a4441cba0c78b6a983c.s3tc.ctex"
+uid="uid://crtmdtr7uvg8k"
+path.s3tc="res://.godot/imported/istockphoto-534129318-612x612.jpg-c880bbb64dae06a82b51b27f559b57bb.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Designersoup Low Poly Car Pack Volume 1 updated/docLorean.fbm/387359c5580f06c08c266126b3b46db47e48ba44.png"
-dest_files=["res://.godot/imported/387359c5580f06c08c266126b3b46db47e48ba44.png-0614f16ee55b0a4441cba0c78b6a983c.s3tc.ctex"]
+source_file="res://assets/textures/istockphoto-534129318-612x612.jpg"
+dest_files=["res://.godot/imported/istockphoto-534129318-612x612.jpg-c880bbb64dae06a82b51b27f559b57bb.s3tc.ctex"]
 
 [params]
 

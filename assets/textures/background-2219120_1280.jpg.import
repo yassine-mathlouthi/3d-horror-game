@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crtmdtr7uvg8k"
-path.s3tc="res://.godot/imported/istockphoto-534129318-612x612.jpg-e3963fc27f5f855563a79ee601ff5905.s3tc.ctex"
+uid="uid://bpgg4wrdbgh6a"
+path.s3tc="res://.godot/imported/background-2219120_1280.jpg-eed2e10bdfb0c2e9de8e4a279bd1b4ca.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/istockphoto-534129318-612x612.jpg"
-dest_files=["res://.godot/imported/istockphoto-534129318-612x612.jpg-e3963fc27f5f855563a79ee601ff5905.s3tc.ctex"]
+source_file="res://assets/textures/background-2219120_1280.jpg"
+dest_files=["res://.godot/imported/background-2219120_1280.jpg-eed2e10bdfb0c2e9de8e4a279bd1b4ca.s3tc.ctex"]
 
 [params]
 

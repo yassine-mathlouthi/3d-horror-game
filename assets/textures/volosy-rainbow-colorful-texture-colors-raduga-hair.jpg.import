@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx8wo6j1wdlch"
-path.s3tc="res://.godot/imported/387359c5580f06c08c266126b3b46db47e48ba44.png-44fa29785d740474e5e0f255239a3868.s3tc.ctex"
+uid="uid://sdqox60psx1u"
+path.s3tc="res://.godot/imported/volosy-rainbow-colorful-texture-colors-raduga-hair.jpg-2eaefdf7d8f7500466c4c26c0da000f6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Designersoup Low Poly Car Pack Volume 1 updated/Landyroamer.fbm/387359c5580f06c08c266126b3b46db47e48ba44.png"
-dest_files=["res://.godot/imported/387359c5580f06c08c266126b3b46db47e48ba44.png-44fa29785d740474e5e0f255239a3868.s3tc.ctex"]
+source_file="res://assets/textures/volosy-rainbow-colorful-texture-colors-raduga-hair.jpg"
+dest_files=["res://.godot/imported/volosy-rainbow-colorful-texture-colors-raduga-hair.jpg-2eaefdf7d8f7500466c4c26c0da000f6.s3tc.ctex"]
 
 [params]
 
