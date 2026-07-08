@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="3d-game-fps"
-config/version="0.1.4"
+config/version="0.1.5"
 run/main_scene="uid://ddwjxf64t3pca"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
