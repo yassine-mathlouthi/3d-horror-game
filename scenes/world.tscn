@@ -79,7 +79,7 @@ offset_bottom = 40.0
 [node name="TouchControllers" parent="Control" instance=ExtResource("6_qfnet")]
 
 [node name="Abandoned_House" parent="." instance=ExtResource("7_i7141")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.20937, 2.027008, 96.60977)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.090534, 2.0270119, 96.78203)
 
 [node name="Key" parent="." instance=ExtResource("6_i7141")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 9.85646, 2.7454152, -25.00177)
