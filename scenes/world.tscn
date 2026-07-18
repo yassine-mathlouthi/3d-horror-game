@@ -77,5 +77,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -93.71003, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.090534, 95.737045, 96.78203)
 
 [node name="enemy" parent="NavigationRegion3D" instance=ExtResource("7_7r4gi")]
-transform = Transform3D(0.19265877, 0.053689815, 0, -0.053689815, 0.19265877, 0, 0, 0, 0.2, 0, 2.3106956, 0)
+transform = Transform3D(0.24082346, 0.067112274, 0, -0.067112274, 0.24082346, 0, 0, 0, 0.25, 0, 2.3106956, 0)
 player_path = NodePath("../../Player")

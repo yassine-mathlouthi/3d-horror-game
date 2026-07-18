@@ -10203,3 +10203,4 @@ shape = SubResource("CapsuleShape3D_8qclf")
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_wtq4b")
 anim_player = NodePath("../AnimationPlayer")
+active = true
