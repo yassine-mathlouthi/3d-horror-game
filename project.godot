@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="3d-game-fps"
-config/version="0.1.11"
+config/version="0.1.12"
 run/main_scene="uid://ddwjxf64t3pca"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
