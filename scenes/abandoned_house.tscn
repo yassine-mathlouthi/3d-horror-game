@@ -28668,7 +28668,7 @@ transform = Transform3D(2.015534, 0, 0, 0, 2.015534, 0, 0, 0, 2.015534, -0.56038
 mesh = SubResource("ArrayMesh_36ohj")
 skeleton = NodePath("")
 
-[node name="Vecindario" type="MeshInstance3D" parent="." unique_id=1716378374]
+[node name="Vecindario" type="Node3D" parent="." unique_id=1716378374]
 transform = Transform3D(76.47522, 0, 0, 0, -9.116557e-06, 76.47521, 0, -76.47521, -9.116557e-06, -34.01164, 0.39898726, -98.88926)
 
 [node name="Telefono" type="MeshInstance3D" parent="Vecindario" unique_id=1141147018]
