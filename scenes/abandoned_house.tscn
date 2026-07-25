@@ -24770,7 +24770,7 @@ mesh = SubResource("ArrayMesh_eqs1l")
 skeleton = NodePath("")
 
 [node name="Grass_001" type="MeshInstance3D" parent="grass" unique_id=1953802398]
-transform = Transform3D(-5.1165404, -0.00036338114, 7.3540964, 7.3358445, -0.63104326, 5.1038117, 0.5177987, 8.936637, 0.36069524, 0.28116852, -0.5845239, -0.4594784)
+transform = Transform3D(-5.1165404, -0.00036338114, 7.3540964, 7.3358445, -0.63104326, 5.1038117, 0.5177988, 8.936637, 0.36069524, 0.15183282, -0.5845237, -0.45947844)
 mesh = SubResource("ArrayMesh_eqs1l")
 skeleton = NodePath("")
 
@@ -25316,11 +25316,6 @@ skeleton = NodePath("")
 
 [node name="Grass_052" type="MeshInstance3D" parent="grass" unique_id=2000513633]
 transform = Transform3D(6.4768453, 4.5298273e-07, 3.9758365, 3.9659743, -0.53493726, -6.460782, 0.2798524, 7.5809393, -0.45589548, 0.44982323, -0.94565797, -0.4849601)
-mesh = SubResource("ArrayMesh_eqs1l")
-skeleton = NodePath("")
-
-[node name="Grass_051" type="MeshInstance3D" parent="grass" unique_id=1723663103]
-transform = Transform3D(-3.8422394, 2.2865123e-07, 6.6408453, 6.6243734, -0.5400349, 3.832709, 0.4674359, 7.653232, 0.27044734, 0.377227, -0.5867334, -0.4596342)
 mesh = SubResource("ArrayMesh_eqs1l")
 skeleton = NodePath("")
 
@@ -28487,6 +28482,418 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="Casa" unique_id=1055028743]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Casa/StaticBody3D" unique_id=1308672739]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, -1.4210855e-14, 0, 1.4210855e-14, 1.0000001, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_4ed1d")
+
+[node name="Casa2" type="MeshInstance3D" parent="." unique_id=103501456]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -35.85332, 3.096475, -126.221954)
+mesh = SubResource("ArrayMesh_1jhbs")
+skeleton = NodePath("")
+
+[node name="Piso_Baño_001" type="MeshInstance3D" parent="Casa2" unique_id=441832579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10846248, 0.036808778, -0.03275804)
+mesh = SubResource("ArrayMesh_op8ru")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Piso_Baño_001" unique_id=1924380185]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Piso_Baño_001/StaticBody3D" unique_id=1595284766]
+shape = SubResource("ConcavePolygonShape3D_t2htm")
+
+[node name="Piso_Cocina" type="MeshInstance3D" parent="Casa2" unique_id=1298278258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002350769, 0.054021608, -0.03275154)
+mesh = SubResource("ArrayMesh_tgb0j")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Piso_Cocina" unique_id=748368779]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Piso_Cocina/StaticBody3D" unique_id=291108496]
+shape = SubResource("ConcavePolygonShape3D_t2htm")
+
+[node name="Piso_Sotano" type="MeshInstance3D" parent="Casa2" unique_id=48601193]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.054699726, -0.00625885, -0.068711765)
+mesh = SubResource("ArrayMesh_3fxlk")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Piso_Sotano" unique_id=295496720]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Piso_Sotano/StaticBody3D" unique_id=1059192924]
+shape = SubResource("ConvexPolygonShape3D_l7ryi")
+
+[node name="Piso_pisina " type="MeshInstance3D" parent="Casa2" unique_id=454514142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09298864, 0.18390274, -0.045441214)
+mesh = SubResource("ArrayMesh_ovubm")
+skeleton = NodePath("")
+
+[node name="Pisina" type="MeshInstance3D" parent="Casa2" unique_id=724029709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09298864, 0.18390274, -0.045441214)
+mesh = SubResource("ArrayMesh_log18")
+skeleton = NodePath("")
+
+[node name="Escaleras_Pisina" type="MeshInstance3D" parent="Casa2" unique_id=875525237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04837555, 0.17697877, -0.04395453)
+mesh = SubResource("ArrayMesh_o1ub5")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Escaleras_Pisina" unique_id=80143966]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Escaleras_Pisina/StaticBody3D" unique_id=1831556139]
+shape = SubResource("ConvexPolygonShape3D_2vahm")
+
+[node name="Pared_Cocina" type="MeshInstance3D" parent="Casa2" unique_id=399587490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002350769, 0.054021608, -0.03275154)
+mesh = SubResource("ArrayMesh_x4td0")
+skeleton = NodePath("")
+
+[node name="Patio" type="MeshInstance3D" parent="Casa2" unique_id=1261059781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.06519188, 0.012716522, -0.03707302)
+mesh = SubResource("ArrayMesh_eu8le")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Patio" unique_id=472900911]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Patio/StaticBody3D" unique_id=373691970]
+shape = SubResource("ConvexPolygonShape3D_7npa6")
+
+[node name="Anaquel" type="MeshInstance3D" parent="Casa2" unique_id=1733890999]
+transform = Transform3D(1.0352497, 0, 0, 0, 1.0352497, 0, 0, 0, 1.0352497, 0.13424239, 0.014863434, 0.020801513)
+mesh = SubResource("ArrayMesh_j4upx")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Anaquel" unique_id=66045140]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Anaquel/StaticBody3D" unique_id=1741512648]
+shape = SubResource("ConvexPolygonShape3D_4r54w")
+
+[node name="Anaquel_001" type="MeshInstance3D" parent="Casa2" unique_id=436344919]
+transform = Transform3D(1.0352497, 0, 0, 0, 1.0352497, 0, 0, 0, 1.0352497, 0.10880335, 0.014863434, 0.020801513)
+mesh = SubResource("ArrayMesh_vrv0d")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Anaquel_001" unique_id=237351890]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Anaquel_001/StaticBody3D" unique_id=447450193]
+shape = SubResource("ConvexPolygonShape3D_y5oxx")
+
+[node name="a" type="MeshInstance3D" parent="Casa2" unique_id=641077240]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0078119277, 0.039801482, -0.009650094)
+mesh = SubResource("ArrayMesh_nrxib")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/a" unique_id=1526453366]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/a/StaticBody3D" unique_id=1319067684]
+shape = SubResource("ConvexPolygonShape3D_7dhhj")
+
+[node name="Barandal" type="MeshInstance3D" parent="Casa2" unique_id=1006586118]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051051255, 0.011093979, -0.06730938)
+mesh = SubResource("ArrayMesh_d54yh")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Barandal" unique_id=960079927]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Barandal/StaticBody3D" unique_id=1554671637]
+shape = SubResource("ConvexPolygonShape3D_efj6k")
+
+[node name="Bigas" type="MeshInstance3D" parent="Casa2" unique_id=224920696]
+transform = Transform3D(-1.1920929e-07, -0.99999994, 0, 0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.049622133, 0.0007324219, -0.04091446)
+mesh = SubResource("ArrayMesh_xs4b8")
+skeleton = NodePath("")
+
+[node name="Cables_001" type="MeshInstance3D" parent="Casa2" unique_id=1815422579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.010420266, 0.041340485, -0.04438402)
+mesh = SubResource("ArrayMesh_510yd")
+skeleton = NodePath("")
+
+[node name="Caja_fusiles" type="MeshInstance3D" parent="Casa2" unique_id=633921836]
+transform = Transform3D(0.041197877, 0, 0, 0, 0.20925118, 0, 0, 0, 0.20435174, -0.010420266, 0.041340485, -0.056366064)
+mesh = SubResource("ArrayMesh_0b3ou")
+skeleton = NodePath("")
+
+[node name="Cama" type="MeshInstance3D" parent="Casa2" unique_id=2139805916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.028425941, 0.019263458, -0.030141797)
+mesh = SubResource("ArrayMesh_67jgv")
+skeleton = NodePath("")
+
+[node name="Cama_001" type="MeshInstance3D" parent="Casa2" unique_id=552666559]
+transform = Transform3D(-1.1920929e-07, 0.99999994, 0, -0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.04291744, 0.031336363, 0.005551498)
+mesh = SubResource("ArrayMesh_wwyd5")
+skeleton = NodePath("")
+
+[node name="Casa_001" type="MeshInstance3D" parent="Casa2" unique_id=1225174981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.067451365, -0.037474595, 0.015479424)
+mesh = SubResource("ArrayMesh_myumn")
+skeleton = NodePath("")
+
+[node name="Casa_002" type="MeshInstance3D" parent="Casa2" unique_id=1332828277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06748909, -0.069184266, 0.015194123)
+mesh = SubResource("ArrayMesh_2caqo")
+skeleton = NodePath("")
+
+[node name="Casa_003" type="MeshInstance3D" parent="Casa2" unique_id=366682870]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06748169, -0.053206787, 0.030166075)
+mesh = SubResource("ArrayMesh_n2wbn")
+skeleton = NodePath("")
+
+[node name="Cesta" type="MeshInstance3D" parent="Casa2" unique_id=1993089249]
+transform = Transform3D(-0.056789245, -0.35179743, -1.0966059, -0.22001943, -1.0744011, 0.35606802, -1.1304413, 0.22678526, -0.014212533, 0.13178362, 0.028987732, 0.005674851)
+mesh = SubResource("ArrayMesh_mvkma")
+skeleton = NodePath("")
+
+[node name="Cesta_001" type="MeshInstance3D" parent="Casa2" unique_id=123417518]
+transform = Transform3D(1.4748296, 0, 0, 0, -1.4748296, 5.743198e-07, 0, -5.743198e-07, -1.4748296, 0.101172104, 0.019072723, 0.005224426)
+mesh = SubResource("ArrayMesh_hnorg")
+skeleton = NodePath("")
+
+[node name="Closet" type="MeshInstance3D" parent="Casa2" unique_id=1014767853]
+transform = Transform3D(1, 0, 0, 0, -1.1920929e-07, 0.99999994, 0, -0.99999994, -1.1920929e-07, 0.061501674, 0.029261932, 0.008666852)
+mesh = SubResource("ArrayMesh_k7drk")
+skeleton = NodePath("")
+
+[node name="Closet_001" type="MeshInstance3D" parent="Casa2" unique_id=381966501]
+transform = Transform3D(0, -1, 0, 0.86533177, 0, 0.50119936, -0.50119936, 0, 0.86533177, 0.045156747, 0.08211334, 0.013610742)
+mesh = SubResource("ArrayMesh_ldxoe")
+skeleton = NodePath("")
+
+[node name="Closet_002" type="MeshInstance3D" parent="Casa2" unique_id=647087907]
+transform = Transform3D(-1, 3.8941437e-07, 0, -3.8941437e-07, -1, 0, 0, 0, 1, -0.010130196, -0.032701265, 0.014119494)
+mesh = SubResource("ArrayMesh_y4mi6")
+skeleton = NodePath("")
+
+[node name="Closet_003" type="MeshInstance3D" parent="Casa2" unique_id=881957004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018650245, 0.0037828065, -0.022458969)
+mesh = SubResource("ArrayMesh_4gbmy")
+skeleton = NodePath("")
+
+[node name="Cofre" type="MeshInstance3D" parent="Casa2" unique_id=1258065210]
+transform = Transform3D(-1.1920929e-07, -0.99999994, 0, 0.99999994, -1.1920929e-07, 0, 0, 0, 1, -0.044516716, 0.018935699, -0.029653575)
+mesh = SubResource("ArrayMesh_t7dux")
+skeleton = NodePath("")
+
+[node name="Cofre_001" type="MeshInstance3D" parent="Casa2" unique_id=764269657]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04291744, 0.047004852, 0.00614877)
+mesh = SubResource("ArrayMesh_gf6gr")
+skeleton = NodePath("")
+
+[node name="Colchon" type="MeshInstance3D" parent="Casa2" unique_id=1751151508]
+transform = Transform3D(0.9990041, -0.044618543, 0, 0.044618543, 0.9990041, 0, 0, 0, 1, -0.028425941, 0.019263458, -0.028556323)
+mesh = SubResource("ArrayMesh_l5f1i")
+skeleton = NodePath("")
+
+[node name="Colchon_001" type="MeshInstance3D" parent="Casa2" unique_id=1807514796]
+transform = Transform3D(0.8769488, 0.4805839, 0, -0.4805839, 0.8769488, 0, 0, 0, 1, 0.035112876, 0.031336363, 0.007136972)
+mesh = SubResource("ArrayMesh_nqcis")
+skeleton = NodePath("")
+
+[node name="Columnas" type="MeshInstance3D" parent="Casa2" unique_id=557668543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.060865995, -0.012064286, -0.05535346)
+mesh = SubResource("ArrayMesh_g7cck")
+skeleton = NodePath("")
+
+[node name="E" type="MeshInstance3D" parent="Casa2" unique_id=541030846]
+transform = Transform3D(1.0000004, 0, 0, 0, 0.99972886, -0.023298044, 0, 0.023298044, 0.99972886, 0.07322633, -0.14969945, -0.039640028)
+mesh = SubResource("ArrayMesh_681ng")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/E" unique_id=1273809583]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/E/StaticBody3D" unique_id=1887604249]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, -1.4210855e-14, 0, 1.4210855e-14, 1.0000001, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_riwtg")
+
+[node name="E_001" type="MeshInstance3D" parent="Casa2" unique_id=1503822444]
+transform = Transform3D(0.93595505, 0, 0, 0, 0.93595505, 0, 0, 0, 0.93595505, 0.055157356, 0.13306518, -0.03481873)
+mesh = SubResource("ArrayMesh_rralh")
+skeleton = NodePath("")
+
+[node name="Escalera" type="MeshInstance3D" parent="Casa2" unique_id=695634725]
+transform = Transform3D(0.23203066, -1.0838332, 0, 1.0838332, 0.23203066, 0, 0, 0, 1.1083919, 0.11543367, -0.0024662018, -0.060048047)
+mesh = SubResource("ArrayMesh_8r612")
+skeleton = NodePath("")
+
+[node name="Estufa" type="MeshInstance3D" parent="Casa2" unique_id=1400906497]
+transform = Transform3D(-1.1372201, 4.4284985e-07, 0, -4.4284985e-07, -1.1372201, 0, 0, 0, 1.1372201, -0.008105736, 0.039801482, -0.026187425)
+mesh = SubResource("ArrayMesh_oys4f")
+skeleton = NodePath("")
+
+[node name="Fusil" type="MeshInstance3D" parent="Casa2" unique_id=48075355]
+transform = Transform3D(0.70710665, -0.70710677, 0, 0.70710677, 0.70710665, 0, 0, 0, 1, -0.008774071, 0.041340485, -0.05553426)
+mesh = SubResource("ArrayMesh_x7w51")
+skeleton = NodePath("")
+
+[node name="Lavabo" type="MeshInstance3D" parent="Casa2" unique_id=836567299]
+transform = Transform3D(-1.1920929e-07, -0.99999994, 0, 0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.1216494, 0.017382888, 0.0048135426)
+mesh = SubResource("ArrayMesh_kcx03")
+skeleton = NodePath("")
+
+[node name="Lavabo_001" type="MeshInstance3D" parent="Casa2" unique_id=1963600581]
+transform = Transform3D(-1.1920929e-07, 0.99999994, 0, -0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.03278816, 0.114934236, 0.012177451)
+mesh = SubResource("ArrayMesh_i2fd7")
+skeleton = NodePath("")
+
+[node name="Lavadero" type="MeshInstance3D" parent="Casa2" unique_id=1481049054]
+transform = Transform3D(1, -1.7484555e-07, 0, 1.7484555e-07, 1, 0, 0, 0, 1, -0.11765743, 0.0149728395, -0.023665125)
+mesh = SubResource("ArrayMesh_si8q0")
+skeleton = NodePath("")
+
+[node name="Lavadora" type="MeshInstance3D" parent="Casa2" unique_id=336769373]
+transform = Transform3D(-0.77747184, 3.027587e-07, 0, -3.027587e-07, -0.77747184, 0, 0, 0, 0.77747184, -0.0060399245, 0.061868742, -0.06331998)
+mesh = SubResource("ArrayMesh_d06ew")
+skeleton = NodePath("")
+
+[node name="Lavadora_001" type="MeshInstance3D" parent="Casa2" unique_id=578389153]
+transform = Transform3D(-9.2681866e-08, -0.7774718, 0, 0.7774718, -9.2681866e-08, 0, 0, 0, 0.77747184, 0.13532265, 0.044603575, 0.008182495)
+mesh = SubResource("ArrayMesh_swks6")
+skeleton = NodePath("")
+
+[node name="Marco_P" type="MeshInstance3D" parent="Casa2" unique_id=1611626496]
+transform = Transform3D(-1.0467912, 5.4996866e-07, 0, -4.0763553e-07, -1.4122968, 0, 0, 0, 1, 0.07909638, 0.012601852, 0.015094621)
+mesh = SubResource("ArrayMesh_5wak1")
+skeleton = NodePath("")
+
+[node name="Marco_P_001" type="MeshInstance3D" parent="Casa2" unique_id=695705592]
+transform = Transform3D(-1.0467912, 3.3977724e-07, 0, -4.0763553e-07, -0.8725339, 0, 0, 0, 1, 0.0003300476, 0.010963516, -0.056514155)
+mesh = SubResource("ArrayMesh_cvc3e")
+skeleton = NodePath("")
+
+[node name="Marco_P_002" type="MeshInstance3D" parent="Casa2" unique_id=821715276]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, -0.014084434, 0.002962036, 0.015094621)
+mesh = SubResource("ArrayMesh_ossx8")
+skeleton = NodePath("")
+
+[node name="Marco_P_003" type="MeshInstance3D" parent="Casa2" unique_id=790983660]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, 0.008414802, 0.10413971, 0.015094621)
+mesh = SubResource("ArrayMesh_1nn3f")
+skeleton = NodePath("")
+
+[node name="Marco_P_004" type="MeshInstance3D" parent="Casa2" unique_id=1824653019]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, 0.008414802, 0.077955626, 0.015094621)
+mesh = SubResource("ArrayMesh_4jvqo")
+skeleton = NodePath("")
+
+[node name="Marco_P_005" type="MeshInstance3D" parent="Casa2" unique_id=883424262]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, 0.005417099, 0.0036149598, -0.020571742)
+mesh = SubResource("ArrayMesh_6axko")
+skeleton = NodePath("")
+
+[node name="Marco_P_006" type="MeshInstance3D" parent="Casa2" unique_id=1512992817]
+transform = Transform3D(-1.2478723e-07, -1.474726, 0, 1.0467911, -1.7580105e-07, 0, 0, 0, 1, 0.06756731, -0.05311447, 0.0195214)
+mesh = SubResource("ArrayMesh_xs7gu")
+skeleton = NodePath("")
+
+[node name="Marco_P_007" type="MeshInstance3D" parent="Casa2" unique_id=1620823629]
+transform = Transform3D(1.0467912, 0, 0, 0, 1.4747261, 0, 0, 0, 1, 0.10363878, -0.022657929, 0.02038707)
+mesh = SubResource("ArrayMesh_rs8q2")
+skeleton = NodePath("")
+
+[node name="Marco_P_008" type="MeshInstance3D" parent="Casa2" unique_id=973185118]
+transform = Transform3D(1.0467912, 0, 0, 0, 1.4747261, 0, 0, 0, 1, 0.03560463, -0.022657929, 0.02038707)
+mesh = SubResource("ArrayMesh_30qlb")
+skeleton = NodePath("")
+
+[node name="Marco_P_009" type="MeshInstance3D" parent="Casa2" unique_id=949606231]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, 0.0061891554, -0.018065795, -0.020571742)
+mesh = SubResource("ArrayMesh_sgprt")
+skeleton = NodePath("")
+
+[node name="Marco_P_010" type="MeshInstance3D" parent="Casa2" unique_id=977070254]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, -0.12297596, -0.024792938, -0.020571742)
+mesh = SubResource("ArrayMesh_ffhkj")
+skeleton = NodePath("")
+
+[node name="Marco_P_011" type="MeshInstance3D" parent="Casa2" unique_id=194553426]
+transform = Transform3D(1.0467912, 0, 0, 0, 1.4122968, 0, 0, 0, 1, -0.10599766, -0.006425095, -0.020571742)
+mesh = SubResource("ArrayMesh_fcg1v")
+skeleton = NodePath("")
+
+[node name="Marco_P_012" type="MeshInstance3D" parent="Casa2" unique_id=1310203628]
+transform = Transform3D(1.0467912, 0, 0, 0, 1.4122968, 0, 0, 0, 1, -0.07577808, -0.006425095, -0.020571742)
+mesh = SubResource("ArrayMesh_ylmfd")
+skeleton = NodePath("")
+
+[node name="Marco_P_013" type="MeshInstance3D" parent="Casa2" unique_id=1046478035]
+transform = Transform3D(-1.2478723e-07, -1.4122967, 0, 1.0467911, -1.683589e-07, 0, 0, 0, 1, 0.065561965, 0.059078217, -0.020571742)
+mesh = SubResource("ArrayMesh_r6v4r")
+skeleton = NodePath("")
+
+[node name="Marco_P_014" type="MeshInstance3D" parent="Casa2" unique_id=1460282510]
+transform = Transform3D(1.0467912, 0, 0, 0, 1.263473, 0, 0, 0, 1, 0.07374464, -0.08207184, -0.020571742)
+mesh = SubResource("ArrayMesh_wr4ox")
+skeleton = NodePath("")
+
+[node name="m" type="MeshInstance3D" parent="Casa2" unique_id=787972159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.044975623, 0.00090583804, 0.029915668)
+mesh = SubResource("ArrayMesh_gghtx")
+skeleton = NodePath("")
+
+[node name="Papel" type="MeshInstance3D" parent="Casa2" unique_id=2111470405]
+transform = Transform3D(0, 3.998999e-08, 1.5786879, 1.3418415, 0, 4.7048566e-08, 3.998999e-08, 1.3418415, 0, 0.048031062, 0.11668549, 0.0035578967)
+mesh = SubResource("ArrayMesh_fxhex")
+skeleton = NodePath("")
+
+[node name="Piso_005" type="MeshInstance3D" parent="Casa2" unique_id=388776523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003282814, 0.0048381044, -0.0073848534)
+mesh = SubResource("ArrayMesh_aqhxs")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2/Piso_005" unique_id=769502969]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/Piso_005/StaticBody3D" unique_id=1228026128]
+shape = SubResource("ConcavePolygonShape3D_rcmtk")
+
+[node name="Pared_Baño_001" type="MeshInstance3D" parent="Casa2" unique_id=1788296701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10846248, 0.036808778, -0.03275804)
+mesh = SubResource("ArrayMesh_hj17q")
+skeleton = NodePath("")
+
+[node name="Pared_Baño" type="MeshInstance3D" parent="Casa2" unique_id=1385936269]
+transform = Transform3D(-1.1920929e-07, 0.99999994, 0, -0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.054534644, 0.10953385, 0.0030025148)
+mesh = SubResource("ArrayMesh_wxyh8")
+skeleton = NodePath("")
+
+[node name="Puerta" type="MeshInstance3D" parent="Casa2" unique_id=1989881137]
+transform = Transform3D(-1.0937274, 0, 0, 0, 1, -8.742278e-08, 0, 8.742278e-08, 1, 0.06885868, -0.08257461, -0.02328918)
+mesh = SubResource("ArrayMesh_jxsf2")
+skeleton = NodePath("")
+
+[node name="Refrigerador" type="MeshInstance3D" parent="Casa2" unique_id=189131086]
+transform = Transform3D(-1.4189632e-07, -1.1903125, 0, 1.1903125, -1.4189632e-07, 0, 0, 0, 1.1903126, 0.01173027, 0.0666182, -0.022106614)
+mesh = SubResource("ArrayMesh_00c4w")
+skeleton = NodePath("")
+
+[node name="Palanca" type="MeshInstance3D" parent="Casa2" unique_id=1283801365]
+transform = Transform3D(-0.0035714814, 0, 0.014911581, 0, -0.005486033, 0, -0.063067414, 0, -0.00084443664, -0.010512008, 0.042329863, -0.05636017)
+mesh = SubResource("ArrayMesh_w5vkt")
+skeleton = NodePath("")
+
+[node name="Puerta_R" type="MeshInstance3D" parent="Casa2" unique_id=517068326]
+transform = Transform3D(-1.4189632e-07, -1.1903125, 0, 1.1903125, -1.4189632e-07, 0, 0, 0, 1.1903126, 0.016443023, 0.062556, -0.01444525)
+mesh = SubResource("ArrayMesh_mjcar")
+skeleton = NodePath("")
+
+[node name="Puerta_R_001" type="MeshInstance3D" parent="Casa2" unique_id=560149013]
+transform = Transform3D(-1.4189632e-07, -1.1903125, 0, 1.1903125, -1.4189632e-07, 0, 0, 0, 1.1903126, 0.016443023, 0.062556, -0.022316365)
+mesh = SubResource("ArrayMesh_w6uee")
+skeleton = NodePath("")
+
+[node name="Tapa_004" type="MeshInstance3D" parent="Casa2" unique_id=712935420]
+transform = Transform3D(0.01406676, 0.19667567, -6.099891e-09, 0.038721982, -0.07144751, -1.679135e-08, 3.6016334e-09, 0, 0.20435174, -0.0100393295, 0.040426787, -0.056366064)
+mesh = SubResource("ArrayMesh_mnipo")
+skeleton = NodePath("")
+
+[node name="Piso_Baño_002" type="MeshInstance3D" parent="Casa2" unique_id=510990139]
+transform = Transform3D(-1.1920929e-07, 0.99999994, 0, -0.99999994, -1.1920929e-07, 0, 0, 0, 1, 0.054534644, 0.10953385, 0.0030025148)
+mesh = SubResource("ArrayMesh_uwsuy")
+skeleton = NodePath("")
+
+[node name="Barandal_003" type="MeshInstance3D" parent="Casa2" unique_id=887076492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.046645127, -0.0038549805, 0.011293561)
+mesh = SubResource("ArrayMesh_qqtbm")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Casa2" unique_id=216643038]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Casa2/StaticBody3D" unique_id=1357761882]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, -1.4210855e-14, 0, 1.4210855e-14, 1.0000001, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_4ed1d")
 
