@@ -34,6 +34,6 @@ func _physics_process(delta: float) -> void:
 		),
 		Vector3.UP
 	)
-	rotation_degrees.z = -10.5
+	rotation_degrees.z = -11
 	
 	move_and_slide()
