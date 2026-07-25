@@ -9684,7 +9684,7 @@ _data = {
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8qclf"]
 radius = 1.2192383
-height = 5.395031
+height = 13.8503475
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_w8i8w"]
 animation = &"_walk"
@@ -10193,7 +10193,7 @@ skin = SubResource("Skin_v2sbl")
 libraries/ = SubResource("AnimationLibrary_0jcu5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=13301342]
-transform = Transform3D(0.9835632, -0.18056424, 0, 0.18056424, 0.9835632, 0, 0, 0, 1, 0.9592012, -3.0309722, 0)
+transform = Transform3D(0.9835632, -0.18056424, 0, 0.18056424, 0.9835632, 0, 0, 0, 1, 0.19583735, 1.1271966, 0)
 shape = SubResource("CapsuleShape3D_8qclf")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=390592302]
