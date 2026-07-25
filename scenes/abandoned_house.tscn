@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bulrp6prqojit"]
+[gd_scene format=4 uid="uid://bfjea6f0b5vi5"]
 
 [ext_resource type="Texture2D" uid="uid://ceou2pqqiofvu" path="res://assets/models/Abandoned_House/Textures/Madera4.jpg" id="1_o1lng"]
 [ext_resource type="Texture2D" uid="uid://bs0nyjb4kpqtg" path="res://assets/models/Abandoned_House/Textures/telaraña.png" id="2_u3cm2"]
@@ -24085,9 +24085,8 @@ points = PackedVector3Array(-0.0027586883, -0.0027586883, -0.0029092908, -0.0027
 [node name="Abandoned_House" type="Node3D" unique_id=725361807]
 script = ExtResource("65_optimizer")
 
-[node name="Colision" type="MeshInstance3D" parent="." unique_id=415251105]
+[node name="Colision" type="Node3D" parent="." unique_id=904585910]
 transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, -32.974716, 8.364936, -125.980354)
-skeleton = NodePath("")
 
 [node name="Piso_001" type="MeshInstance3D" parent="Colision" unique_id=946399653]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.055848733, 0.0010046386, -0.085549146)
@@ -24100,9 +24099,8 @@ skeleton = NodePath("")
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, -1.4210855e-14, 0, 1.4210855e-14, 1.0000001, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_4sf0x")
 
-[node name="Telarañas" type="MeshInstance3D" parent="." unique_id=1822809383]
+[node name="Telarañas" type="Node3D" parent="." unique_id=664191463]
 transform = Transform3D(94.9831, 0, 0, 0, 5.661434e-06, 94.9831, 0, -94.9831, 5.661434e-06, -29.54963, 8.294361, -123.57789)
-skeleton = NodePath("")
 
 [node name="Telaraña" type="MeshInstance3D" parent="Telarañas" unique_id=905258722]
 transform = Transform3D(-0.92453784, -0.98376274, -0.14440708, 0.05379043, -0.24638481, 1.3340963, -0.9928491, 0.902728, 0.2067499, -0.03665663, -0.061045073, -0.11979153)
@@ -25730,9 +25728,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Mesas/Mesa_Trabajo/StaticBody3D" unique_id=704959207]
 shape = SubResource("ConvexPolygonShape3D_g6xpx")
 
-[node name="Libreros" type="MeshInstance3D" parent="." unique_id=156698895]
+[node name="Libreros" type="Node3D" parent="." unique_id=937079354]
 transform = Transform3D(37.85111, 0, 0, 0, -4.5122038e-06, 37.851105, 0, -37.851105, -4.5122038e-06, -26.14119, 7.7450304, -127.2351)
-skeleton = NodePath("")
 
 [node name="Librero" type="MeshInstance3D" parent="Libreros" unique_id=2143964209]
 transform = Transform3D(2.6419306, 0, 0, 0, 2.6419306, 0, 0, 0, 2.6419306, 0.10959038, -0.17073365, -0.067689486)
@@ -25799,9 +25796,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Libreros/Librero_006/StaticBody3D" unique_id=1585747614]
 shape = SubResource("ConvexPolygonShape3D_0ncov")
 
-[node name="Lamparas" type="MeshInstance3D" parent="." unique_id=1443070142]
+[node name="Lamparas" type="Node3D" parent="." unique_id=1226276689]
 transform = Transform3D(29.594076, 0, 0, 0, -3.5278888e-06, 29.594074, 0, -29.594074, -3.5278888e-06, -31.463116, 7.7450304, -127.2351)
-skeleton = NodePath("")
 
 [node name="Lampara1" type="MeshInstance3D" parent="Lamparas" unique_id=718633748]
 transform = Transform3D(-1.2079812e-07, -1.013328, 0, 1.013328, -1.2079812e-07, 0, 0, 0, 1.0133281, 0.133228, -0.31570008, -0.21207699)
@@ -26093,9 +26089,8 @@ transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -2.1175824e
 light_color = Color(0.7234575, 0.5742998, 0.3408609, 1)
 omni_attenuation = 0.5
 
-[node name="Cajones_Puertas" type="MeshInstance3D" parent="." unique_id=1146263133]
+[node name="Cajones_Puertas" type="Node3D" parent="." unique_id=334812473]
 transform = Transform3D(36.587288, 0, 0, 0, -4.3615446e-06, 36.587284, 0, -36.587284, -4.3615446e-06, -27.085424, 8.347101, -123.76596)
-skeleton = NodePath("")
 
 [node name="P" type="MeshInstance3D" parent="Cajones_Puertas" unique_id=1747557524]
 transform = Transform3D(2.7331903, 0, 0, 0, -3.2582167e-07, -2.73319, 0, 2.73319, -3.2582167e-07, -0.095272295, 0.3918033, -0.07539003)
@@ -26417,9 +26412,8 @@ transform = Transform3D(-1.9326578, 1.9326572, -7.986979e-07, 1.9326572, 1.93265
 mesh = SubResource("ArrayMesh_o56o8")
 skeleton = NodePath("")
 
-[node name="Tuberias" type="MeshInstance3D" parent="." unique_id=1272629495]
+[node name="Tuberias" type="Node3D" parent="." unique_id=2036188880]
 transform = Transform3D(58.59354, 0, 0, 0, -6.9848943e-06, 58.593536, 0, -58.593536, -6.9848943e-06, -25.567638, 8.347101, -124.682396)
-skeleton = NodePath("")
 
 [node name="Tuberia" type="MeshInstance3D" parent="Tuberias" unique_id=687108601]
 transform = Transform3D(1.7066725, 0, 0, 0, 1.7066725, 0, 0, 0, 1.7066725, 0.024731293, 0.063051455, -0.19099985)
@@ -26441,9 +26435,8 @@ transform = Transform3D(0, 5.0862806e-08, -1.7066725, 1.7066725, 0, -5.0862806e-
 mesh = SubResource("ArrayMesh_ivw76")
 skeleton = NodePath("")
 
-[node name="Ventiladores" type="MeshInstance3D" parent="." unique_id=415554685]
+[node name="Ventiladores" type="Node3D" parent="." unique_id=2056194603]
 transform = Transform3D(35.26732, 0, 0, 0, -4.204192e-06, 35.267315, 0, -35.267315, -4.204192e-06, -31.88598, 8.223707, -123.33956)
-skeleton = NodePath("")
 
 [node name="Ventilador" type="MeshInstance3D" parent="Ventiladores" unique_id=1011422903]
 transform = Transform3D(2.149258, 0, 0, 0, 2.149258, 0, 0, 0, 2.149258, 0.20050903, -0.06904816, -0.14997044)
@@ -26505,9 +26498,8 @@ transform = Transform3D(0.8240995, -0.5664448, 0, 0.5664448, 0.8240995, 0, 0, 0,
 mesh = SubResource("ArrayMesh_wlyuh")
 skeleton = NodePath("")
 
-[node name="Television " type="MeshInstance3D" parent="." unique_id=1190959046]
+[node name="Television " type="Node3D" parent="." unique_id=1746197875]
 transform = Transform3D(25.526524, 0, 0, 0, -3.0429987e-06, 25.526522, 0, -25.526522, -3.0429987e-06, -25.784004, 8.029103, -122.66301)
-skeleton = NodePath("")
 
 [node name="Tele" type="MeshInstance3D" parent="Television " unique_id=1917452963]
 transform = Transform3D(-2.4342503e-07, -2.041997, 0, 2.041997, -2.4342503e-07, 0, 0, 0, 2.0419972, 0.14536354, -0.07048767, -0.1412764)
@@ -26529,9 +26521,8 @@ transform = Transform3D(1.4970092, 0.26015875, 0, -0.26015875, 1.4970092, 0, 0, 
 mesh = SubResource("ArrayMesh_6a5mc")
 skeleton = NodePath("")
 
-[node name="Focos_light" type="MeshInstance3D" parent="." unique_id=986739252]
+[node name="Focos_light" type="ImporterMeshInstance3D" parent="." unique_id=303633325]
 transform = Transform3D(39.497112, 0, 0, 0, -4.7084227e-06, 39.49711, 0, -39.49711, -4.7084227e-06, -24.89, 7.998845, -126.36339)
-skeleton = NodePath("")
 
 [node name="Foco" type="MeshInstance3D" parent="Focos_light" unique_id=1346774917]
 transform = Transform3D(0.05157977, -4.5092468e-09, 0, 4.5092468e-09, 0.05157977, 0, 0, 0, -0.05157977, 0.0018873215, -0.13799073, -0.13621645)
@@ -27240,9 +27231,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Cajas/Caja_031/StaticBody3D" unique_id=245841666]
 shape = SubResource("ConvexPolygonShape3D_twn78")
 
-[node name="Trash" type="MeshInstance3D" parent="." unique_id=1206374988]
+[node name="Trash" type="Node3D" parent="." unique_id=325981000]
 transform = Transform3D(28.237968, 0, 0, 0, -3.3662282e-06, 28.237967, 0, -28.237967, -3.3662282e-06, -34.4291, 8.106474, -133.6619)
-skeleton = NodePath("")
 
 [node name="Basura" type="MeshInstance3D" parent="Trash" unique_id=1869923861]
 transform = Transform3D(2.110798e-07, -0.41188928, -3.5172968, 0, -3.5172968, 0.41188928, -3.5413313, -2.6384974e-08, -4.221596e-07, 0.2785933, -0.4329138, -0.1654161)
@@ -27429,9 +27419,8 @@ transform = Transform3D(4.221596e-07, -3.4073033, -0.96504605, 0, -0.9650467, 3.
 mesh = SubResource("ArrayMesh_kj2n0")
 skeleton = NodePath("")
 
-[node name="Barriles" type="MeshInstance3D" parent="." unique_id=2062949685]
+[node name="Barriles" type="Node3D" parent="." unique_id=1904315468]
 transform = Transform3D(17.960983, 0, 0, 0, -2.141116e-06, 17.960981, 0, -17.960981, -2.141116e-06, -26.868725, 7.2147617, -129.08875)
-skeleton = NodePath("")
 
 [node name="Barril" type="MeshInstance3D" parent="Barriles" unique_id=1890715762]
 transform = Transform3D(1.6917132, 1.2169371, 0, -1.2169371, 1.6917132, 0, 0, 0, 2.6909935, -0.13059342, 0.04187683, -0.5318263)
@@ -27493,9 +27482,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Barriles/Barril_005/StaticBody3D" unique_id=1850871652]
 shape = SubResource("ConvexPolygonShape3D_ha8lj")
 
-[node name="Almohadas" type="MeshInstance3D" parent="." unique_id=1159468232]
+[node name="Almohadas" type="Node3D" parent="." unique_id=637910455]
 transform = Transform3D(30.241114, 0, 0, 0, -3.6050217e-06, 30.241112, 0, -30.241112, -3.6050217e-06, -34.71237, 7.4705215, -122.88168)
-skeleton = NodePath("")
 
 [node name="Almohada" type="MeshInstance3D" parent="Almohadas" unique_id=1464845420]
 transform = Transform3D(2.519203, -0.022827212, 0, 0.022827212, 2.519203, 0, 0, 0, 2.5193064, -0.528274, 0.24067749, -0.23503858)
@@ -27547,9 +27535,8 @@ transform = Transform3D(-3.0032473e-07, -2.5193062, 0, 2.5193062, -3.0032473e-07
 mesh = SubResource("ArrayMesh_4l8my")
 skeleton = NodePath("")
 
-[node name="AL" type="MeshInstance3D" parent="." unique_id=1160074829]
+[node name="AL" type="Node3D" parent="." unique_id=216152508]
 transform = Transform3D(43.229927, 0, 0, 0, -5.153409e-06, 43.229923, 0, -43.229923, -5.153409e-06, -35.3438, 7.6635118, -129.99355)
-skeleton = NodePath("")
 
 [node name="Al" type="MeshInstance3D" parent="AL" unique_id=953065142]
 transform = Transform3D(-2.0497215, 7.9819097e-07, 0, -7.9819097e-07, -2.0497215, 0, 0, 0, 2.0497215, -0.2868235, -0.05247284, -0.16775331)
@@ -27661,9 +27648,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AL/Al_010/StaticBody3D" unique_id=334857403]
 shape = SubResource("ConvexPolygonShape3D_0hq45")
 
-[node name="Base" type="MeshInstance3D" parent="." unique_id=2047892409]
+[node name="Base" type="Node3D" parent="." unique_id=2067517105]
 transform = Transform3D(0, 15.200985, 4.5302465e-07, 4.5302465e-07, 0, 15.200985, 15.200985, 4.5302465e-07, 0, -52.416473, 1.1627959, -104.9824)
-skeleton = NodePath("")
 
 [node name="Mesa_016" type="MeshInstance3D" parent="Base" unique_id=979305663]
 transform = Transform3D(-0.07157534, 0.07157545, -1.7345895e-08, -0.07006757, -0.07006749, 0.02066778, 0.014614321, 0.014614327, 0.09909046, -0.056524657, 0.093890995, -0.12604283)
@@ -27835,9 +27821,8 @@ transform = Transform3D(-7.8422084e-07, -6.578521, 0, 6.578521, -7.8422084e-07, 
 mesh = SubResource("ArrayMesh_4tqeu")
 skeleton = NodePath("")
 
-[node name="Otros" type="MeshInstance3D" parent="." unique_id=161814357]
+[node name="Otros" type="Node3D" parent="." unique_id=1309575407]
 transform = Transform3D(36.203415, 0, 0, 0, -4.3157834e-06, 36.20341, 0, -36.20341, -4.3157834e-06, -31.751337, 7.2823963, -120.08527)
-skeleton = NodePath("")
 
 [node name="t" type="MeshInstance3D" parent="Otros" unique_id=1707152295]
 transform = Transform3D(2.76217, 0, 0, 0, 2.76217, 0, 0, 0, 2.76217, 0.13750947, 0.21127838, -0.08932699)
@@ -27864,9 +27849,8 @@ transform = Transform3D(2.76217, 0, 0, 0, 2.76217, 0, 0, 0, 2.76217, 0.20083946,
 mesh = SubResource("ArrayMesh_owlcs")
 skeleton = NodePath("")
 
-[node name="Lavanderia" type="MeshInstance3D" parent="." unique_id=1130761886]
+[node name="Lavanderia" type="Node3D" parent="." unique_id=432796591]
 transform = Transform3D(38.05484, 0, 0, 0, -4.5364905e-06, 38.054836, 0, -38.054836, -4.5364905e-06, -39.001297, 4.7776103, -129.09834)
-skeleton = NodePath("")
 
 [node name="Secadora" type="MeshInstance3D" parent="Lavanderia" unique_id=373971905]
 transform = Transform3D(-2.4354813e-07, -2.0430295, 0, 2.0430295, -2.4354813e-07, 0, 0, 0, 2.0430298, 0.4098583, 0.04162262, -0.022674808)
@@ -27938,9 +27922,8 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lavanderia/Tapa_003/StaticBody3D" unique_id=1472521454]
 shape = SubResource("ConvexPolygonShape3D_nkvbl")
 
-[node name="Baño" type="MeshInstance3D" parent="." unique_id=1117709253]
+[node name="Baño" type="Node3D" parent="." unique_id=1617542694]
 transform = Transform3D(28.184772, 0, 0, 0, -3.3598867e-06, 28.18477, 0, -28.18477, -3.3598867e-06, -31.78569, 7.7458363, -130.07965)
-skeleton = NodePath("")
 
 [node name="Tasa_Baño" type="MeshInstance3D" parent="Baño" unique_id=1614849464]
 transform = Transform3D(-5.9731815e-07, -2.334147, 0, 2.5053337, -5.5650406e-07, 0, 0, 0, 2.3341472, 0.007848206, 0.2663922, -0.14856912)
@@ -28067,9 +28050,8 @@ transform = Transform3D(1.2912675, 0, 0, 0, 1.1545725, 0, 0, 0, 1.5500652, -0.02
 mesh = SubResource("ArrayMesh_e6sqy")
 skeleton = NodePath("")
 
-[node name="Alfombras" type="MeshInstance3D" parent="." unique_id=774796691]
+[node name="Alfombras" type="Node3D" parent="." unique_id=542435463]
 transform = Transform3D(47.46179, 0, 0, 0, -5.657886e-06, 47.461784, 0, -47.461784, -5.657886e-06, -33.40496, 8.491749, -128.56079)
-skeleton = NodePath("")
 
 [node name="Alfonbra" type="MeshInstance3D" parent="Alfombras" unique_id=1592205439]
 transform = Transform3D(-1.3327082, 5.1897575e-07, 0, -5.1897575e-07, -1.3327082, 0, 0, 0, 1.3327082, -0.23127724, -0.1012619, -0.18284339)
@@ -28135,8 +28117,6 @@ shape = SubResource("ConvexPolygonShape3D_l7ryi")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09298864, 0.18390274, -0.045441214)
 mesh = SubResource("ArrayMesh_ovubm")
 skeleton = NodePath("")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Casa/Piso_pisina " unique_id=1591485264]
 
 [node name="Pisina" type="MeshInstance3D" parent="Casa" unique_id=2055787095]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09298864, 0.18390274, -0.045441214)
@@ -28680,8 +28660,6 @@ skeleton = NodePath("")
 transform = Transform3D(1.8925717, 0, 0, 0, 1.3076131, 0, 0, 0, 1.3076131, 0.0059999824, -0.018394351, -0.017)
 mesh = SubResource("ArrayMesh_fx6mc")
 skeleton = NodePath("")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="Vecindario/R_002" unique_id=2143763446]
 
 [node name="Arbol" type="MeshInstance3D" parent="Vecindario" unique_id=803365515]
 transform = Transform3D(0.152486, -0.15248603, 0, 0.15248603, 0.152486, 0, 0, 0, 0.2156478, 0.43700054, 0.1879805, -0.01204587)

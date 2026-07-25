@@ -204,7 +204,7 @@ The project includes a virtual joystick addon for touchscreen movement. Mobile s
 ├── scenes/
 │   ├── world.tscn                         # Main game scene
 │   ├── player.tscn                        # Player controller scene
-│   ├── abandoned_house.tscn               # Horror house scene
+│   ├── abandoned_house.scn                # Horror house scene (binary for faster loading)
 │   ├── key.tscn                           # Pickup key scene
 │   ├── item_list.tscn                     # Inventory UI scene
 │   ├── car.tscn                           # Vehicle scene

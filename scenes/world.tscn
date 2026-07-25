@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ca3fpngi8vwlk" path="res://scenes/touch_controllers.tscn" id="6_qfnet"]
 [ext_resource type="PackedScene" uid="uid://c3hcwrq4gs03t" path="res://scenes/item_list.tscn" id="7_4mrxx"]
 [ext_resource type="PackedScene" uid="uid://bvrfbfh5lh5qv" path="res://scenes/enemy.tscn" id="7_7r4gi"]
-[ext_resource type="PackedScene" uid="uid://bulrp6prqojit" path="res://scenes/abandoned_house.tscn" id="7_i7141"]
+[ext_resource type="PackedScene" path="res://scenes/abandoned_house.scn" id="7_i7141"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_71j4m"]
 panorama = ExtResource("1_71j4m")
