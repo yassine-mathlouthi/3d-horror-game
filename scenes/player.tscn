@@ -3446,6 +3446,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody3D"]
+collision_mask = 3
 floor_max_angle = 1.74882
 floor_snap_length = 1.5
 script = ExtResource("1_3vyb7")
