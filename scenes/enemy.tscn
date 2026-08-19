@@ -10198,8 +10198,12 @@ transform = Transform3D(0.9835632, -0.18056424, 0, 0.18056424, 0.9835632, 0, 0, 
 shape = SubResource("CapsuleShape3D_8qclf")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=390592302]
+path_desired_distance = 0.3
+target_desired_distance = 0.8
+path_height_offset = -0.65
 navigation_layers = 3
 radius = 0.25
+height = 1.6
 
 [node name="AnimationTree" type="AnimationTree" parent="." unique_id=1614769424]
 tree_root = SubResource("AnimationNodeStateMachine_wtq4b")
