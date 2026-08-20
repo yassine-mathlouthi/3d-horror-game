@@ -75,6 +75,7 @@ offset_bottom = 40.0
 [node name="TouchControllers" parent="Features/Control" unique_id=2001115054 instance=ExtResource("6_qfnet")]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1445436406]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.8137531)
 navigation_mesh = SubResource("NavigationMesh_w7kh3")
 
 [node name="Abandoned_House" parent="NavigationRegion3D" unique_id=1887762829 instance=ExtResource("7_i7141")]
@@ -84,6 +85,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.090534, 2.0270157, 96.7820
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -93.71003, 0)
 
 [node name="enemy" parent="NavigationRegion3D" unique_id=1736707054 instance=ExtResource("7_7r4gi")]
-transform = Transform3D(0.16857642, 0.046978593, 0, -0.046978593, 0.16857642, 0, 0, 0, 0.175, 0, 8.259697, 0)
+transform = Transform3D(0.16857642, 0.046978593, 0, -0.046978593, 0.16857642, 0, 0, 0, 0.175, 0.6763754, 10.18467, 0)
 floor_max_angle = 1.7453293
 player_path = NodePath("../../Player")
+
+[node name="EnemyPatrolPoints" type="Node3D" parent="." unique_id=997512508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.7691197, 0)
+
+[node name="PatrolPoint01" type="Marker3D" parent="EnemyPatrolPoints" unique_id=1990229909 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.986123, 0)
+
+[node name="PatrolPoint02" type="Marker3D" parent="EnemyPatrolPoints" unique_id=1380009777 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.8052044, -4.986123, 2.3958864)
+
+[node name="PatrolPoint03" type="Marker3D" parent="EnemyPatrolPoints" unique_id=686511721 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.787123, -4.986123, 0)
+
+[node name="PatrolPoint04" type="Marker3D" parent="EnemyPatrolPoints" unique_id=1822213129 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.547192, -4.986123, 0)
+
+[node name="PatrolPoint05" type="Marker3D" parent="EnemyPatrolPoints" unique_id=1363605048 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.325603, -4.986123, -10.319492)
+
+[node name="PatrolPoint06" type="Marker3D" parent="EnemyPatrolPoints" unique_id=122735900 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.986123, -16.895493)
+
+[node name="PatrolPoint07" type="Marker3D" parent="EnemyPatrolPoints" unique_id=2116574531 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.986123, -8.168431)
+
+[node name="PatrolPoint08" type="Marker3D" parent="EnemyPatrolPoints" unique_id=913872115 groups=["enemy_patrol_points"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3416524, -4.986123, -9.469477)
