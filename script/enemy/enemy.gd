@@ -46,6 +46,20 @@ var wait_timer := 0.0
 var last_patrol_point: Node3D
 var random := RandomNumberGenerator.new()
 
+@export_group("Jumpscare")
+@export var catch_distance := 1.35
+
+@onready var imported_animation_player: AnimationPlayer = $AnimationPlayer
+@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var jumpscare_animation_player: AnimationPlayer = $JumpscareAnimationPlayer
+@onready var collision_shape: CollisionShape3D = $CollisionShape3D
+
+
+var has_caught_player := false
+
+
+
+
 
 func _ready() -> void:
 	random.randomize()
@@ -68,6 +82,9 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	_apply_gravity(delta)
+	if _try_catch_player():
+		return
+
 	_update_player_detection(delta)
 
 	match current_state:
@@ -79,6 +96,53 @@ func _physics_process(delta: float) -> void:
 			_update_search(delta)
 
 	move_and_slide()
+
+
+func _try_catch_player() -> bool:
+	if has_caught_player or player == null:
+		return has_caught_player
+
+	var flat_offset := player.global_position - global_position
+	flat_offset.y = 0.0
+
+	if flat_offset.length() > catch_distance:
+		return false
+
+	_catch_player()
+	return true
+
+func _catch_player() -> void:
+	if has_caught_player:
+		return
+
+	has_caught_player = true
+	_stop_horizontal_movement()
+	velocity = Vector3.ZERO
+	navigation_agent.target_position = global_position
+
+	# Face the player for the final scare pose.
+	var look_target := player.global_position
+	look_target.y = global_position.y
+	if global_position.distance_squared_to(look_target) > 0.0001:
+		look_at(look_target, Vector3.UP)
+		rotation_degrees.z = -11.0
+
+	# Stop the looping walk animation before the custom lunge.
+	animation_tree.active = false
+	imported_animation_player.stop()
+
+	# Prevent the two CharacterBody3D capsules from pushing each other.
+	collision_shape.set_deferred(&"disabled", true)
+
+	# Start both sides of the jumpscare during the same frame.
+	if player.has_method("start_jumpscare"):
+		player.start_jumpscare(self)
+	else:
+		push_error("The player does not implement start_jumpscare(enemy).")
+
+	jumpscare_animation_player.play(&"jumpscare_lunge")
+	set_physics_process(false)
+
 
 
 func _apply_gravity(delta: float) -> void:

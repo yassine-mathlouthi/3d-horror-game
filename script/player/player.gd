@@ -10,6 +10,17 @@ const INTERACTION_DISTANCE := 3.0
 @onready var flashlight_fill: OmniLight3D = $camera_mount/Camera3D/FlashlightFill
 @onready var flashlight: SpotLight3D = $camera_mount/Camera3D/Flashlight
 
+
+@onready var jumpscare_animation_player: AnimationPlayer = $JumpscareAnimationPlayer
+@onready var jumpscare_audio: AudioStreamPlayer = $JumpscareAudio
+@onready var game_over_menu: Control = $CanvasLayer/GameOverMenu
+@onready var restart_button: Button = $CanvasLayer/GameOverMenu/CenterContainer/MenuPanel/MenuContent/RestartButton
+
+var controls_enabled := true
+var jumpscare_active := false
+
+
+
 @export var sensitivity := 0.12
 @export var FLASH_BY_DEFAULT : bool = false
 @onready var camera_mount: Node3D = $camera_mount
@@ -33,9 +44,14 @@ func _ready() -> void:
 	_set_flashlight_visible(FLASH_BY_DEFAULT)
 	_hide_from_first_person_camera(visuals)
 	key_text.hide()
+	game_over_menu.hide()
+	restart_button.pressed.connect(_on_restart_button_pressed)
+
 
 
 func _input(event: InputEvent) -> void:
+	if not controls_enabled:
+		return
 	if event is InputEventMouseMotion:
 		var look_delta: Vector2 = event.relative * sensitivity
 		rotate_y(deg_to_rad(-look_delta.x))
@@ -49,7 +65,12 @@ func _physics_process(delta: float) -> void:
 
 	is_running = Input.is_action_pressed("run")
 	var speed := RUN_SPEED if is_running else WALKING_SPEED
-
+	
+	if not controls_enabled:
+		velocity = Vector3.ZERO
+		return
+	_handle_interaction()
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
@@ -75,6 +96,41 @@ func _physics_process(delta: float) -> void:
 
 	_update_camera_bob(delta, direction)
 	move_and_slide()
+
+func start_jumpscare(enemy: Node3D) -> void:
+	if jumpscare_active:
+		return
+
+	jumpscare_active = true
+	controls_enabled = false
+	velocity = Vector3.ZERO
+	key_text.hide()
+
+	# Remove camera bob before aiming at the enemy.
+	camera_mount.position = base_camera_position
+	camera_mount.rotation = Vector3.ZERO
+	look_pitch = 0.0
+	camera.rotation = Vector3.ZERO
+
+	# Turn the player's horizontal forward direction toward the enemy.
+	var look_target := enemy.global_position
+	look_target.y = global_position.y
+	if global_position.distance_squared_to(look_target) > 0.0001:
+		look_at(look_target, Vector3.UP)
+
+	# Stop the first-person body from keeping an unrelated visual direction.
+	visuals.rotation.y = 0.0
+
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+	if jumpscare_audio.stream != null:
+		jumpscare_audio.play()
+
+	jumpscare_animation_player.play(&"jumpscare_camera")
+	await jumpscare_animation_player.animation_finished
+
+	game_over_menu.show()
+	restart_button.grab_focus()
 
 
 func _handle_interaction() -> void:
@@ -137,3 +193,6 @@ func _hide_from_first_person_camera(node: Node) -> void:
 
 func _set_flashlight_visible(visible: bool) -> void:
 	flashlight.visible = visible
+
+func _on_restart_button_pressed() -> void:
+	get_tree().reload_current_scene()
