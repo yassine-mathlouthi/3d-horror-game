@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dax3dcwerlfwx"
-path.s3tc="res://.godot/imported/Cajadefusiles.jpg-04ed70fe8214fbafd0b765ebc709e10a.s3tc.ctex"
+path.s3tc="res://.godot/imported/Cajadefusiles.jpg-6cb6da2a872758c95d2e726152f81c5a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Cajadefusiles.jpg"
-dest_files=["res://.godot/imported/Cajadefusiles.jpg-04ed70fe8214fbafd0b765ebc709e10a.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Cajadefusiles.jpg"
+dest_files=["res://.godot/imported/Cajadefusiles.jpg-6cb6da2a872758c95d2e726152f81c5a.s3tc.ctex"]
 
 [params]
 

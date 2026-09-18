@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q0rk62nby1yk"
-path.s3tc="res://.godot/imported/Metal2.jpg-ed98c0e99371fc714f53c0043e63cdb6.s3tc.ctex"
+path.s3tc="res://.godot/imported/Metal2.jpg-aa9aa6c420184ae75624368b17109357.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Metal2.jpg"
-dest_files=["res://.godot/imported/Metal2.jpg-ed98c0e99371fc714f53c0043e63cdb6.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Metal2.jpg"
+dest_files=["res://.godot/imported/Metal2.jpg-aa9aa6c420184ae75624368b17109357.s3tc.ctex"]
 
 [params]
 

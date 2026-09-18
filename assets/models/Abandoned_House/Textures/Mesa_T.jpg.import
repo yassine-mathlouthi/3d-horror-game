@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5co2fk20vwxf"
-path.s3tc="res://.godot/imported/Mesa_T.jpg-57a8ac20f6db21b81fbb40bb456d23e7.s3tc.ctex"
+path.s3tc="res://.godot/imported/Mesa_T.jpg-2b13fb102e3ecd861e309736446a4ff4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Mesa_T.jpg"
-dest_files=["res://.godot/imported/Mesa_T.jpg-57a8ac20f6db21b81fbb40bb456d23e7.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Mesa_T.jpg"
+dest_files=["res://.godot/imported/Mesa_T.jpg-2b13fb102e3ecd861e309736446a4ff4.s3tc.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db3qsb1ms2wuq"
-path.s3tc="res://.godot/imported/P1.jpg-105dfd9e75e946701f8ed65b0d999ab6.s3tc.ctex"
+path.s3tc="res://.godot/imported/P1.jpg-4633291f88ac150bd47887ed56afc736.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/P1.jpg"
-dest_files=["res://.godot/imported/P1.jpg-105dfd9e75e946701f8ed65b0d999ab6.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/P1.jpg"
+dest_files=["res://.godot/imported/P1.jpg-4633291f88ac150bd47887ed56afc736.s3tc.ctex"]
 
 [params]
 

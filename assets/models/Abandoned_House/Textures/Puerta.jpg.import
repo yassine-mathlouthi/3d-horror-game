@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b407ksf6n5w5k"
-path.s3tc="res://.godot/imported/Puerta.jpg-f22e8288babba73b06b41247e472ad8d.s3tc.ctex"
+path.s3tc="res://.godot/imported/Puerta.jpg-bf3fd107985de589fc44bd9aa2eb115f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Puerta.jpg"
-dest_files=["res://.godot/imported/Puerta.jpg-f22e8288babba73b06b41247e472ad8d.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Puerta.jpg"
+dest_files=["res://.godot/imported/Puerta.jpg-bf3fd107985de589fc44bd9aa2eb115f.s3tc.ctex"]
 
 [params]
 

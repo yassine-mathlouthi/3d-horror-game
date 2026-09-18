@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckqycix5hu2c3"
-path.s3tc="res://.godot/imported/road.jpg-3976c676decaf28ea2ece7dd8113beef.s3tc.ctex"
+path.s3tc="res://.godot/imported/road.jpg-ee2b905d527874346d0a5f0a28105e92.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/road.jpg"
-dest_files=["res://.godot/imported/road.jpg-3976c676decaf28ea2ece7dd8113beef.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/road.jpg"
+dest_files=["res://.godot/imported/road.jpg-ee2b905d527874346d0a5f0a28105e92.s3tc.ctex"]
 
 [params]
 

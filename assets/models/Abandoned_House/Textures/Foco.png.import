@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2lwq8g6hei0r"
-path.s3tc="res://.godot/imported/Foco.png-0974f4614e0995f977389e3576536586.s3tc.ctex"
+path.s3tc="res://.godot/imported/Foco.png-2620c176fbc22a73e6221f552f0583f1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Foco.png"
-dest_files=["res://.godot/imported/Foco.png-0974f4614e0995f977389e3576536586.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Foco.png"
+dest_files=["res://.godot/imported/Foco.png-2620c176fbc22a73e6221f552f0583f1.s3tc.ctex"]
 
 [params]
 

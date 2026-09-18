@@ -25932,6 +25932,12 @@ transform = Transform3D(-1.2079812e-07, -1.013328, 0, 1.013328, -1.2079812e-07, 
 mesh = SubResource("ArrayMesh_bn8mx")
 skeleton = NodePath("")
 
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/Lampara1_001"]
+transform = Transform3D(0.03334611, -4.440892e-16, 0, 0, 0.03334611, -3.1763736e-22, -4.440892e-16, 3.7057691e-22, 0.03334611, -0.013790131, 0, 0.0011416934)
+light_color = Color(0.7749845, 0.5516724, 0, 1)
+light_energy = 0.505
+omni_range = 2.3268075
+
 [node name="Lampara2" type="MeshInstance3D" parent="Lamparas"]
 transform = Transform3D(6.978677e-08, 1.1708277, 3.8382726e-07, 0, 3.4893387e-07, -1.1708277, -1.1708277, 1.04680154e-07, 0, -0.1371209, -0.106770016, -0.09355995)
 mesh = SubResource("ArrayMesh_7gxf0")

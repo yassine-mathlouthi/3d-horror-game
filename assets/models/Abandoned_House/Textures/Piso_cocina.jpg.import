@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj67amn6q01dl"
-path.s3tc="res://.godot/imported/Piso_cocina.jpg-67814cf9ae2960af3e3e272152826458.s3tc.ctex"
+path.s3tc="res://.godot/imported/Piso_cocina.jpg-edef2ab07b39523eafd354341fa2368a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Piso_cocina.jpg"
-dest_files=["res://.godot/imported/Piso_cocina.jpg-67814cf9ae2960af3e3e272152826458.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Piso_cocina.jpg"
+dest_files=["res://.godot/imported/Piso_cocina.jpg-edef2ab07b39523eafd354341fa2368a.s3tc.ctex"]
 
 [params]
 

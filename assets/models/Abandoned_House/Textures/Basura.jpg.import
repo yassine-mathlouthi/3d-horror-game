@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dr6r1cu722vwt"
-path.s3tc="res://.godot/imported/Basura.jpg-b4671cf010a0f4ba8028c0917bf04c89.s3tc.ctex"
+path.s3tc="res://.godot/imported/Basura.jpg-ae123c31729aac78cc57005b749c8729.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/models/Abandoned_House/textures/Basura.jpg"
-dest_files=["res://.godot/imported/Basura.jpg-b4671cf010a0f4ba8028c0917bf04c89.s3tc.ctex"]
+source_file="res://assets/models/Abandoned_House/Textures/Basura.jpg"
+dest_files=["res://.godot/imported/Basura.jpg-ae123c31729aac78cc57005b749c8729.s3tc.ctex"]
 
 [params]
 

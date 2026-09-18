@@ -1,21 +1,21 @@
-[gd_scene load_steps=9 format=3 uid="uid://ddwjxf64t3pca"]
+[gd_scene load_steps=10 format=3 uid="uid://ddwjxf64t3pca"]
 
+[ext_resource type="Texture2D" uid="uid://cgsvh44atvccq" path="res://sky/mud_road_puresky_4k.exr" id="1_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dupkice01xnrn" path="res://assets/cgshare-book-ground-floor-001.jpg" id="1_k0juu"]
 [ext_resource type="PackedScene" uid="uid://bxtj03lwijts6" path="res://scenes/player.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://ca3fpngi8vwlk" path="res://scenes/touch_controllers.tscn" id="6_qfnet"]
 [ext_resource type="PackedScene" uid="uid://bulrp6prqojit" path="res://scenes/abandoned_house.tscn" id="7_i7141"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4mrxx"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_qfnet"]
+panorama = ExtResource("1_71j4m")
 
-[sub_resource type="Sky" id="Sky_7r4gi"]
-sky_material = SubResource("ProceduralSkyMaterial_4mrxx")
+[sub_resource type="Sky" id="Sky_i7141"]
+sky_material = SubResource("PanoramaSkyMaterial_qfnet")
 
-[sub_resource type="Environment" id="Environment_w7kh3"]
+[sub_resource type="Environment" id="Environment_4mrxx"]
 background_mode = 2
-sky = SubResource("Sky_7r4gi")
-tonemap_mode = 2
+background_energy_multiplier = 0.8
+sky = SubResource("Sky_i7141")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3hyu"]
 albedo_texture = ExtResource("1_k0juu")
@@ -24,11 +24,10 @@ uv1_triplanar = true
 [node name="world" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_w7kh3")
+environment = SubResource("Environment_4mrxx")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-light_energy = 0.175
 shadow_enabled = true
 
 [node name="map" type="Node3D" parent="."]
